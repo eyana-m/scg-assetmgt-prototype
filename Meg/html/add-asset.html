@@ -1,0 +1,349 @@
+<!-- http://kylefox.ca/jquery-modal/examples/ -->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+    <!--*************************-->
+	<!--******* META TAGS *******-->
+    <!--*************************-->
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>PBI IT Asset Inventory System - Add Assets</title>
+	<meta name="description" content="width=device-width, initial-scale=1.0"/>
+	<!-- Mobile Specifics -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="HandheldFrendly" content="true"/>
+	<meta name="MobileOptimized" content=320/>
+
+    <!--***********************-->
+    <!--********* CSS *********-->
+    <!--***********************-->
+
+	<!-- Bootstrap 
+	<link rel="stylesheet" href="../css/bootstrap/bootstrap.css"> -->
+
+	<!-- Style -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!-- Tabslet -->
+	<link rel="stylesheet" type="text/css" href="../css/tabslet/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/tabslet/typography.css">
+	<link rel="stylesheet" type="text/css" href="../css/tabslet/styles.css">
+	<!-- SelectBox -->
+    <link href="../css/jquery.selectbox.css" type="text/css" rel="stylesheet" />
+
+	<!--***************************-->
+    <!--********* FAVICON *********-->
+    <!--***************************-->
+
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon" href="#">
+	<link rel="apple-touch-icon" sizes="114x114" href="#">
+	<link rel="apple-touch-icon" sizes="72x72" href="#">
+	<link rel="apple-touch-icon" sizes="144x144" href="#">
+
+</head>
+<body>
+
+<!--******************************-->
+<!--******* NAVIGATION BAR *******-->
+<!--******************************-->
+
+
+<!--****************************-->
+<!--******* ADD HARDWARE *******-->
+<!--****************************-->
+
+<section>
+	<article>
+		<h2>Add Assets</h2>
+		<div class='tabs tabs_default'>
+			<ul class='horizontal'>
+				<li><a href="#tab-1">Hardware</a></li>
+				<li><a href="#tab-2">Software</a></li>
+			</ul>
+			<div id='tab-1'>
+				<form id="add-asset-form" action="#" method="POST" enctype="multipart/form-data" role="form" onsubmit="#">
+					<table width="50%" height="75%" align="left">
+						<tr>
+							<td>Asset Number</td>
+							<td><input id="asset-number" type="text" value="" name="name"></td>
+						</tr>
+						<tr>
+							<td>Model</td>
+							<td><input id="model" type="text" value="" name="name"></td>
+						</tr>
+						<tr>
+							<td>ERF Number</td>
+							<td><input id="erf-number" type="text" value="" name="name"></td>
+						</tr>
+						<tr>
+							<td>Serial Number</td>
+							<td><input id="serial-number" type="text" value="" name="name"></td>
+						</tr>
+						<tr>
+							<td>Hostname</td>
+							<td><input id="hostname" type="text" name="name"></td>
+						</tr>
+						<tr>
+							<td>Vendor</td>
+							<td><input id="vendor" type="text" value="" name="name"></td>
+						</tr>
+						<tr>
+							<td>PO Number</td>
+							<td><input id="po-number" type="text" value="" name="name"></td>
+						</tr>
+						<tr>
+							<td>Date of Purchase</td>
+							<td><input id="date-of-purchase" type="date" value="" name="name"></td>
+						</tr>
+						<tr>
+							<td>Cost</td>
+							<td><input id="cost" type="text" value="" name="name"></td>
+						</tr>
+						<tr>
+							<td>Remarks</td>
+							<td><input id="remarks" type="text" placeholder="Enter remarks here..." value="" name="name"></td>
+						</tr>
+					</table>
+					<table width="50%" height="75%" align="left">
+						<tr>
+							<td>Type</td>
+							<td>
+								<select class="selectbox">
+									<option value="laptop">Laptop</option>
+									<option value="desktop">Desktop</option>
+									<option value="server">Server</option>
+									<option value="mouse">Mouse</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Book Value</td>
+							<td><input id="book-value" type="text" value="" name="name"></td>
+						</tr>
+						<tr>
+							<td>Predetermined Value</td>
+							<td><input id="predetermined-value" type="text" value="" name="name"></td>
+						</tr>
+						<td>Asset Value</td>
+							<td><input id="asset-value" type="text" value="" name="name"></td>
+						</tr>
+						<tr>
+							<td>Hardware Specifications</td>
+							<td><input id="specs" type="text" placeholder="Enter hardware specifications..." value="" name="name"></td>
+						</tr>
+						<tr><td colspan="2">
+							<input class="form-button" type="submit" value="Submit">
+						</td></tr>
+					</table>
+				</form>
+			</div>
+			<div id='tab-2'>
+				<form id="add-asset-form" action="#" method="POST" enctype="multipart/form-data" role="form" onsubmit="#">
+					<table width="50%" height="75%" align="left">
+						<tr>
+							<td>Asset Number</td>
+							<td><input type="text" required autofocus></td>
+						</tr>
+						<tr>
+							<td>Manufacturer</td>
+							<td><input type="text" required></td>
+						</tr>
+						<tr>
+							<td>Product</td>
+							<td><input type="text" required></td>
+						</tr>
+						<tr>
+							<td>License Key</td>
+							<td><input type="text" required></td>
+						</tr>
+						<tr>
+							<td>Hostname</td>
+							<td><input type="text" required></td>
+						</tr>
+						<tr>
+							<td>Vendor</td>
+							<td><input type="text" required></td>
+						</tr>
+						<tr>
+							<td>PO Number</td>
+							<td><input type="text" required></td>
+						</tr>
+						<tr>
+							<td>Date of Purchase</td>
+							<td><input id="date-of-purchase" type="date" required></td>
+						</tr>
+						<tr>
+							<td>Cost</td>
+							<td><input type="text" required></td>
+						</tr>
+						<tr>
+							<td>Remarks</td>
+							<td><input id="remarks" type="text" placeholder="Enter remarks here..." required></td>
+						</tr>
+					</table>
+					<table width="50%" height="75%" align="left">
+						<tr>
+							<td>Type</td>
+							<td>
+								<select class="selectbox">
+									<option value="audio-video">Audio/Video</option>
+									<option value="office">Office</option>
+									<option value="arts">Arts</option>
+									<option value="arts">Arts</option>
+									<option value="arts">Arts</option>
+									<option value="arts">Arts</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Book Value</td>
+							<td><input type="text" required></td>
+						</tr>
+						<tr>
+							<td>Predetermined Value</td>
+							<td><input type="text" required></td>
+						</tr>
+						<td>Asset Value</td>
+							<td><input type="text" required></td>
+						</tr>
+						<tr>
+							<td>Software Specifications</td>
+							<td><input id="specs" type="text" placeholder="Enter software specifications..."></td>
+						</tr>
+						<tr><td colspan="2">
+						<!-- Button w/ Modal
+							<a class="form-button" href="#submit-asset-me" role="button" data-toggle="modal">Submit</a> -->
+						<!-- Button w/o Modal -->
+							<input class="form-button" type="submit" value="Submit">
+						</td></tr>
+					</table>
+				</form>
+			</div>
+			</div>
+		</div>
+	</article>
+</section>
+
+<!-- MODAL FOR MANUAL ENTRY VERIFICATION -->
+<div id="submit-asset-me" class="modal fade">
+	<div class = "modal-dialog">
+	<div class = "modal-content">
+	<div class = "modal-header">
+		<center><h3>Review Personnel Information</h3></center>
+	</div>
+	<div class = "modal-body">
+		<table width="50%" height="75%" align="center" style="">
+		<tr><td>Asset Number</td><td>Hi</td></tr>
+		<tr><td>Asset Number</td><td>Hi</td></tr>
+		<tr><td>Asset Number</td><td>Hi</td></tr>
+		<tr><td>Asset Number</td><td>Hi</td></tr>
+		<tr><td>Asset Number</td><td>Hi</td></tr>
+		<tr><td>Asset Number</td><td>Hi</td></tr>
+		<tr><td>Asset Number</td><td>Hi</td></tr>
+		<tr><td>Asset Number</td><td>Hi</td></tr>
+		<tr><td>Asset Number</td><td>Hi</td></tr>
+		<tr><td>Asset Number</td><td>Hi</td></tr>
+		<tr><td>Asset Number</td><td>Hi</td></tr>
+		<tr><td>Asset Number</td><td>Hi</td></tr>
+		<tr><td>Asset Number</td><td>Hi</td></tr>
+		<tr><td>Asset Number</td><td>Hi</td></tr>
+		</table>
+	</div>
+	<div class = "modal-footer">
+		<center><h5>Are you sure?</h5></center>
+		<div style="float:left;">
+		<a class="form-button" href="#add-another" role="button" data-toggle="modal">Yes</a>
+		<a class="form-button" href="#tab-1" role="button" data-toggle="modal">No</a>
+		</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<!-- MODAL FOR BATCH UPLOAD VERIFICATION -->
+<div id="submit-asset-bu" class="modal fade">
+	<div class = "modal-dialog">
+	<div class = "modal-content">
+	<div class = "modal-header">
+		<center><h3>Review Personnel Information</h3></center>
+	</div>
+	<div class = "modal-body">
+		<center>Please verify that all asset information in the Excel file are correct before proceeding.</center>
+	</div>
+	<div class = "modal-footer">
+		<a class="form-button" href="#add-another" role="button" data-toggle="modal">Yes</a>
+		<a class="form-button" href="#tab-1" role="button" data-toggle="modal">No</a>
+	</div>
+	</div>
+	</div>
+</div>
+
+<!-- MODAL FOR ADD ANOTHER ASSET -->
+<div id="add-another" class="modal fade">
+	<div class = "modal-dialog">
+	<div class = "modal-content">
+	<div class = "modal-header">
+	</div>
+	<div class = "modal-body">
+		Do you want to add another asset?
+	</div>
+	<div class = "modal-footer">
+		<a class="form-button" href="#tab-1" role="button" data-toggle="modal">Yes</a>
+		<a class="form-button" href="#" role="button" data-toggle="modal">No</a>
+	</div>
+	</div>
+	</div>
+</div>
+
+<!--********************************-->
+<!--******* OUR ORGANIZATION *******-->
+<!--********************************-->
+
+
+<!--**********************-->
+<!--******* FOOTER *******-->
+<!--**********************-->
+
+<!--
+<footer style="margin-top: -50px;"><p class="credits">© PBI IT Asset Inventory System 2014. By Summit Consulting Group, Ateneo de Manila University.</p></footer>
+-->
+
+<!--***********************-->
+<!--******* SCRIPTS *******-->
+<!--***********************-->
+
+<!-- jQuery Core -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<!-- Modernizr -->
+<script type="text/javascript" src="../js/vendor/modernizr.custom.js"></script>
+<!-- Waypoints -->
+<script type="text/javascript" src="../js/vendor/waypoints.min.js"></script>
+<script type="text/javascript" src="../js/vendor/waypoints-sticky.min.js"></script>
+<!-- Tabslet -->
+<script type="text/javascript" src="../js/vendor/jquery.tabslet.min.js"></script>
+<script type="text/javascript">
+	$('.tabs').tabslet({
+		mouseevent: 'click',
+		attribute: 'href',
+		animation: true
+	});
+</script>
+<script type="text/javascript" src="../js/vendor/rainbow-custom.min.js"></script>
+<script type="text/javascript" src="../js/vendor/jquery.anchor.js"></script>
+<!-- Initializer -->
+<script src="../js/initializers.js"></script>
+<!-- SelectBox -->
+<script type="text/javascript" src="../js/jquery.selectbox-0.2.js"></script>
+<script type="text/javascript">
+$(function () {
+    $(".selectbox").selectbox();
+});
+</script>
+
+<!-- Bootstrap -->
+<script src="../js/bootstrap.min.js"></script> 
+
+</body>
+</html>
