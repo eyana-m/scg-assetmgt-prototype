@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<!--SOURCE: view-source:http://getbootstrap.com/examples/signin/-->
+<html lang="en">
+  
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+    <title>Manage Assets</title>
+		<!--<meta name="generator" content="Bootply" />-->
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+    <div class="col-md-7 col-sm-12" >
+    	<table class="table table-striped table-bordered" style="width:100%">
+    		<tr>
+    			<th>Barcode Number</th>
+    			<th>Asset Type</th>
+    			<th>Model</th>
+    			<th>Status</th>
+    			<th>Technology Refresher</th>
+    		</tr>
+    		<tr>
+    			<td>Barcode Number</td>
+    			<td>Asset Type</td>
+    			<td>Model</td>
+    			<td>Status</td>
+    			<td>Technology Refresher</td>
+    		</tr>
+    		
+      	</table>
+    </div>
+    <div class="col-md-4 col-sm-12">
+    	<div class="container" id="fixed-container" style="width:inherit;">
+    		<div class="row" id="filter-row">
+    			FILTER BY:
+	    		<form role="form">
+				  <div class="form-group">
+				    <label for="name">Personnel Name:</label>
+				    <input type="text" class="form-control" id="name">
+				  </div>
+				  <div class="form-group">
+				    <label for="company">Company:</label>
+				    <select class="form-control" id="company">
+					  <option>1</option>
+					  <option>2</option>
+					  <option>3</option>
+					  <option>4</option>
+					  <option>5</option>
+					</select>
+				  </div>
+				  <div class="form-group" style="position:relative;width:100%;">
+				    <label for="category">Category:</label>
+				    <select class="form-control" id="category">
+					  <option>1</option>
+					  <option>2</option>
+					  <option>3</option>
+					  <option>4</option>
+					  <option>5</option>
+					</select>
+				  </div>
+				  <div class="form-group">
+				    <label for="type">Asset Type:</label>
+				    <select class="form-control" id="type">
+					  <option>1</option>
+					  <option>2</option>
+					  <option>3</option>
+					  <option>4</option>
+					  <option>5</option>
+					</select>
+				  </div>
+				  <div class="form-group">
+				    <label for="status">Asset Status:</label>
+				    <select class="form-control" id="status">
+					  <option>1</option>
+					  <option>2</option>
+					  <option>3</option>
+					  <option>4</option>
+					  <option>5</option>
+					</select>
+				  </div>
+				  <div class="form-group">
+				    <label for="model">Model:</label>
+				    <input type="text" class="form-control" id="model">
+				  </div>
+				  <div class="form-group">
+				    <label for="vendor">Vendor:</label>
+				    <input type="text" class="form-control" id="vendor">
+				  </div>
+				  <div class="form-group">
+				    <label for="techrefresher">Technology Refresher:</label>
+				    <input type="text" class="form-control" id="techrefresher">
+				  </div>
+				  <div class="form-group">
+				    <label for="added">Date Added:</label>
+				    <input type="date" class="form-control" id="added">
+				  </div>
+
+				  SCAN:
+				  <div class="form-group">
+				  	<lable for="barcode-button">Barcode Number</label>
+				  	<a class="btn btn-default" href="#scanbarcode" role="button" data-toggle="modal">Scan Barcode</a>
+				  </div>
+				</form>
+    		</div>
+    		<div class="row" id="options-row">
+    			Other Options</br>
+    			<button type="submit" class="btn btn-default">Export Barcode</button>
+    			<a class="btn btn-default" href="#generatereport" role="button" data-toggle="modal">Generate Report</a>
+    		</div>
+    	</div>
+    </div>
+
+    <!--Modals-->
+    <div id = "generatereport" class = "modal fade">
+		<div class = "modal-dialog">
+			<div class = "modal-content">
+				<div class = "modal-header">
+					<h3>Reports Generation</h3>
+				</div>
+				<div class = "modal-body" id="reports-modal">
+				  	<div class="radio">
+					  <label>
+					    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+					    Assets Due for Replacement
+					  </label>
+					</div>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+					    Recently Added Assets
+					  </label>
+					</div>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+					    Assets Status
+					  </label>
+					</div>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+					    Salvage Value of Selected Assets
+					  </label>
+					</div>
+				</div>
+				<div class = "modal-footer">
+					<button class = "btn btn-primary" data-dismiss = "modal">Proceed</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id = "scanbarcode" class = "modal fade">
+		<div class = "modal-dialog">
+			<div class = "modal-content">
+				<div class = "modal-header">
+					<h3>Scan Barcode</h3>
+				</div>
+				<center><div class = "modal-body">
+					<h2>Scan Now!</h2>
+				</div></center>
+				<div class = "modal-footer">
+					<button class = "btn btn-danger" data-dismiss = "modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
