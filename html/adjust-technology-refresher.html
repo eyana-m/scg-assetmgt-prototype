@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+  <!--*************************-->
+  <!--******* META TAGS *******-->
+  <!--*************************-->
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="width=device-width, initial-scale=1.0"/>
+  <!-- Mobile Specifics -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="HandheldFrendly" content="true"/>
+  <meta name="MobileOptimized" content=320/>
+
+  <!--*********************-->
+  <!--******* TITLE *******-->
+  <!--*********************-->
+	<title>PBI IT Asset Inventory System - Adjust Technology Refresher</title>
+	
+  <!--***********************-->
+  <!--********* CSS *********-->
+  <!--***********************-->
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<!-- Style -->
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+
+	<!--***************************-->
+  <!--********* FAVICON *********-->
+  <!--***************************-->
+
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon" href="#">
+	<link rel="apple-touch-icon" sizes="114x114" href="#">
+	<link rel="apple-touch-icon" sizes="72x72" href="#">
+	<link rel="apple-touch-icon" sizes="144x144" href="#">
+
+</head>
+<body>
+
+<!--******************************-->
+<!--******* NAVIGATION BAR *******-->
+<!--******************************-->
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header col-sm-7">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">PBI IT Asset Inventory System</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse col-sm-7" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Assets<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Manage</a></li>
+            <li><a href="#">Add</a></li>
+            <li><a href="#">View All</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Personnel<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Manage</a></li>
+            <li><a href="#">Add</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Create Account</a></li>
+            <li><a href="#">Manage Account</a></li>
+            <li><a href="#">Change Password</a></li>
+            <li class="divider"></li>
+			<li><a href="#">Adjust Barcode Fields</a></li>
+            <li><a href="#">Adjust Technology Refresher</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Database Backup</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!--**********************-->
+<!--******* ADJUST *******-->
+<!--**********************-->
+
+<div class="container" style="background-color: #F17C71; margin-top:60px;">
+	<!-- multistep form -->
+	<div class="row bs-wizard" style="border-bottom:0;">          
+        <div class="col-xs-3 bs-wizard-step complete">
+          <div class="text-center bs-wizard-stepnum">Step 1</div>
+          <div class="progress"><div class="progress-bar"></div></div>
+          <a href="#add-another-asset" class="bs-wizard-dot"></a>
+          <div class="bs-wizard-info text-center">Lorem ipsum dolor sit amet.</div>
+        </div>
+        
+        <div class="col-xs-3 bs-wizard-step complete"><!-- complete -->
+          <div class="text-center bs-wizard-stepnum">Step 2</div>
+          <div class="progress"><div class="progress-bar"></div></div>
+          <a href="#" class="bs-wizard-dot"></a>
+          <div class="bs-wizard-info text-center">Nam mollis tristique erat vel tristique. Aliquam erat volutpat. Mauris et vestibulum nisi. Duis molestie nisl sed scelerisque vestibulum. Nam placerat tristique placerat</div>
+        </div>
+        
+        <div class="col-xs-3 bs-wizard-step active"><!-- complete -->
+          <div class="text-center bs-wizard-stepnum">Step 3</div>
+          <div class="progress"><div class="progress-bar"></div></div>
+          <a href="#" class="bs-wizard-dot"></a>
+          <div class="bs-wizard-info text-center">Integer semper dolor ac auctor rutrum. Duis porta ipsum vitae mi bibendum bibendum</div>
+        </div>
+        
+        <div class="col-xs-3 bs-wizard-step disabled"><!-- active -->
+          <div class="text-center bs-wizard-stepnum">Step 4</div>
+          <div class="progress"><div class="progress-bar"></div></div>
+          <a href="#" class="bs-wizard-dot"></a>
+          <div class="bs-wizard-info text-center"> Curabitur mollis magna at blandit vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</div>
+        </div>
+    </div>
+</div>
+
+<div id="add-another-asset" class="modal fade">
+	<div class = "modal-dialog">
+		<div class = "modal-content">
+			<div class = "modal-header"></div>
+			<div class = "modal-body">Do you want to add another asset?</div>
+			<div class = "modal-footer">
+				<center><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-dismiss="modal" style="margin-bottom: 5px;">Yes</a></center>
+				<center><a class="btn btn-default" href="#" role="button" data-dismiss="modal">No</a></center>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--**********************-->
+<!--******* FOOTER *******-->
+<!--**********************-->
+
+<!--
+<footer style="margin-top: -50px;"><p class="credits">© PBI IT Asset Inventory System 2014. By Summit Consulting Group, Ateneo de Manila University.</p></footer>
+-->
+
+<!--***********************-->
+<!--******* SCRIPTS *******-->
+<!--***********************-->
+
+<!-- jQuery Core -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="../js/bootstrap.min.js"></script> 
+
+</body>
+</html>
