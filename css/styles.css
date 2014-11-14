@@ -98,6 +98,9 @@ h5 {
   margin: 20px;
 }
 
+.h5-no-margin {
+  margin: 5px 20px;
+}
 
 /*custom font*/
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
