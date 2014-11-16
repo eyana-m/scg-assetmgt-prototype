@@ -1,0 +1,442 @@
+<!-- http://kylefox.ca/jquery-modal/examples/ -->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+    <!--*************************-->
+	<!--******* META TAGS *******-->
+    <!--*************************-->
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="width=device-width, initial-scale=1.0"/>
+	<!-- Mobile Specifics -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="HandheldFrendly" content="true"/>
+	<meta name="MobileOptimized" content=320/>
+
+	<!--*********************-->
+	<!--******* TITLE *******-->
+    <!--*********************-->
+	<title>PBI IT Asset Inventory System - Add Assets</title>
+
+    <!--***********************-->
+    <!--********* CSS *********-->
+    <!--***********************-->
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+
+	<!--***************************-->
+    <!--********* FAVICON *********-->
+    <!--***************************-->
+
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon" href="#">
+	<link rel="apple-touch-icon" sizes="114x114" href="#">
+	<link rel="apple-touch-icon" sizes="72x72" href="#">
+	<link rel="apple-touch-icon" sizes="144x144" href="#">
+
+</head>
+<body>
+
+<!--******************************-->
+<!--******* NAVIGATION BAR *******-->
+<!--******************************-->
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header col-sm-7">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">PBI IT Asset Inventory System</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse col-sm-7" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Assets<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Manage</a></li>
+            <li><a href="#">Add</a></li>
+            <li><a href="#">View All</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Personnel<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Manage</a></li>
+            <li><a href="#">Add</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Create Account</a></li>
+            <li><a href="#">Manage Account</a></li>
+            <li><a href="#">Change Password</a></li>
+            <li class="divider"></li>
+			<li><a href="#">Adjust Barcode Fields</a></li>
+            <li><a href="#">Adjust Technology Refresher</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Database Backup</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!--**************************-->
+<!--******* ADD ASSETS *******-->
+<!--**************************-->
+
+<div class="container" style="background-color: #F17C71; margin-top:60px;">
+	<!-- Navigation Tabs -->
+	<ul class="nav nav-tabs" style="padding-top: 20px;">
+		<li class="nav active"><a href="#hardware" data-toggle="tab">Hardware</a></li>
+		<li class="nav"><a href="#software" data-toggle="tab">Software</a></li>
+	</ul>
+	<!-- Tab Panes -->
+	<div class="tab-content">
+		<!--****************************-->
+		<!--******* ADD HARDWARE *******-->
+		<!--****************************-->
+		<div class="tab-pane fade in active" id="hardware">
+			<form id="add-asset-form" class="form-horizontal" role="form" action="#" method="POST" enctype="multipart/form-data" onsubmit="#">
+				<div class="row" style="padding-top: 35px;">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="asset-number" class="col-sm-4 control-label">Asset Number</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="asset-number" placeholder="Asset Number">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="model" class="col-sm-4 control-label">Model</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="model" placeholder="Model">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="erf-number" class="col-sm-4 control-label">ERF Number</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="erf-number" placeholder="ERF Number">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="serial-number" class="col-sm-4 control-label">Serial Number</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="serial-number" placeholder="Serial Number">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="hostname" class="col-sm-4 control-label">Hostname</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="hostname" placeholder="Hostname">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="vendor" class="col-sm-4 control-label">Vendor</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="vendor" placeholder="Vendor">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="po-number" class="col-sm-4 control-label">PO Number</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="po-number" placeholder="PO Number">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="date-of-purchase" class="col-sm-4 control-label">Date of Purchase</label>
+							<div class="col-sm-7">
+								<input type="date" class="form-control" id="date-of-purchase">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="cost" class="col-sm-4 control-label">Cost</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="cost" placeholder="Cost">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="remarks" class="col-sm-4 control-label">Remarks</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="remarks" placeholder="Enter remarks here...">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="type" class="col-sm-4 control-label">Type</label>
+							<div class="col-sm-7">
+								<select class="form-control">
+									<option value="access-point">Access Point</option>
+									<option value="camera">Camera</option>
+									<option value="desktop">Desktop</option>
+									<option value="digital-camera">Digital Camera</option>
+									<option value="external-hd">External Hard Disk</option>
+									<option value="laptop">Laptop</option>
+									<option value="monitor">Monitor</option>
+									<option value="mouse">Mouse</option>
+									<option value="printer">Printer</option>
+									<option value="projector">Projector</option>
+									<option value="server">Server</option>
+									<option value="switch">Switch</option>
+									<option value="tv">TV</option>
+									<option value="ups">UPS</option>
+									<option value="video-conference">Video Conference</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="book-value" class="col-sm-4 control-label">Book Value</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="book-value" placeholder="Book Value">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="predetermined-value" class="col-sm-4 control-label">Predetermined Value</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="rpredetermined-value" placeholder="Predetermined Value">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="asset-value" class="col-sm-4 control-label">Asset Value</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="asset-value" placeholder="Asset Value">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="hw-specs" class="col-sm-4 control-label">Hardware Specifications</label>
+							<div class="col-sm-7">
+								<textarea class="form-control" rows="10" id="hw-specs" placeholder="Enter hardware specifications..."></textarea>
+							</div>
+						</div>
+						<center><a class="btn btn-default" href="#submit-asset-me" role="button" data-toggle="modal" style="margin-bottom: 5px;">Add Asset</a></center>
+						<center><a class="btn btn-default" href="#submit-asset-bu" role="button" data-toggle="modal" style="margin-bottom: 30px;">Batch Upload</a></center>
+					</div>
+				</div>
+			</form>
+		</div> 
+		<!--****************************-->
+		<!--******* ADD SOFTWARE *******-->
+		<!--****************************-->
+		<div class="tab-pane fade" id="software">
+			<form class="form-horizontal" role="form" action="#" method="POST" enctype="multipart/form-data" onsubmit="#">
+				<div class="row" style="padding-top: 35px;">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="asset-number" class="col-sm-4 control-label">Asset Number</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="asset-number" placeholder="Asset Number">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="manufacturer" class="col-sm-4 control-label">Manufacturer</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="manufacturer" placeholder="Manufacturer">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="product" class="col-sm-4 control-label">Product</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="product" placeholder="Product">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="license-key" class="col-sm-4 control-label">License Key</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="license-key" placeholder="License Key">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="hostname" class="col-sm-4 control-label">Hostname</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="hostname" placeholder="Hostname">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="vendor" class="col-sm-4 control-label">Vendor</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="vendor" placeholder="Vendor">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="po-number" class="col-sm-4 control-label">PO Number</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="po-number" placeholder="PO Number">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="date-of-purchase" class="col-sm-4 control-label">Date of Purchase</label>
+							<div class="col-sm-7">
+								<input type="date" class="form-control" id="date-of-purchase">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="cost" class="col-sm-4 control-label">Cost</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="cost" placeholder="Cost">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="remarks" class="col-sm-4 control-label">Remarks</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="remarks" placeholder="Enter remarks here...">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="type" class="col-sm-4 control-label">Type</label>
+							<div class="col-sm-7">
+								<select class="form-control">
+									<option value="access-point">Access Point</option>
+									<option value="camera">Camera</option>
+									<option value="desktop">Desktop</option>
+									<option value="digital-camera">Digital Camera</option>
+									<option value="external-hd">External Hard Disk</option>
+									<option value="laptop">Laptop</option>
+									<option value="monitor">Monitor</option>
+									<option value="mouse">Mouse</option>
+									<option value="printer">Printer</option>
+									<option value="projector">Projector</option>
+									<option value="server">Server</option>
+									<option value="switch">Switch</option>
+									<option value="tv">TV</option>
+									<option value="ups">UPS</option>
+									<option value="video-conference">Video Conference</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="book-value" class="col-sm-4 control-label">Book Value</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="book-value" placeholder="Book Value">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="predetermined-value" class="col-sm-4 control-label">Predetermined Value</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="rpredetermined-value" placeholder="Predetermined Value">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="asset-value" class="col-sm-4 control-label">Asset Value</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="asset-value" placeholder="Asset Value">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="sw-specs" class="col-sm-4 control-label">Software Specifications</label>
+							<div class="col-sm-7">
+								<textarea class="form-control" rows="10" id="sw-specs" placeholder="Enter software specifications..."></textarea>
+							</div>
+						</div>
+						<center><a class="btn btn-default" href="#submit-asset-me" role="button" data-toggle="modal" style="margin-bottom: 5px;">Add Asset</a></center>
+						<center><a class="btn btn-default" href="#submit-asset-bu" role="button" data-toggle="modal" style="margin-bottom: 30px;">Batch Upload</a></center>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<!--**********************-->
+<!--******* MODALS *******-->
+<!--**********************-->
+
+<!-- MANUAL ENTRY VERIFICATION -->
+<div id="submit-asset-me" class="modal fade">
+	<div class = "modal-dialog">
+		<div class = "modal-content">
+			<div class = "modal-header">
+				<center><h3>Review Personnel Information</h3></center>
+			</div>
+			<div class = "modal-body">
+				<table width="50%" height="75%" align="center" style="">
+					<tr><td>Asset Number</td><td>Hi</td></tr>
+					<tr><td>Asset Number</td><td>Hi</td></tr>
+					<tr><td>Asset Number</td><td>Hi</td></tr>
+					<tr><td>Asset Number</td><td>Hi</td></tr>
+					<tr><td>Asset Number</td><td>Hi</td></tr>
+					<tr><td>Asset Number</td><td>Hi</td></tr>
+					<tr><td>Asset Number</td><td>Hi</td></tr>
+					<tr><td>Asset Number</td><td>Hi</td></tr>
+					<tr><td>Asset Number</td><td>Hi</td></tr>
+					<tr><td>Asset Number</td><td>Hi</td></tr>
+					<tr><td>Asset Number</td><td>Hi</td></tr>
+					<tr><td>Asset Number</td><td>Hi</td></tr>
+					<tr><td>Asset Number</td><td>Hi</td></tr>
+					<tr><td>Asset Number</td><td>Hi</td></tr>
+				</table>
+			</div>
+			<div class = "modal-footer">
+				<center><h5>Are you sure?</h5></center>
+				<center><a class="btn btn-default" href="#add-another-asset" role="button" data-toggle="modal" data-dismiss="modal" style="margin-bottom: 5px;">Yes</a></center>
+				<center><a class="btn btn-default" href="#" role="button" data-dismiss="modal">No</a></center>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- BATCH UPLOAD VERIFICATION -->
+<div id="submit-asset-bu" class="modal fade">
+	<div class = "modal-dialog">
+		<div class = "modal-content">
+			<div class = "modal-header">
+				<center><h3>Review Personnel Information</h3></center>
+			</div>
+			<div class = "modal-body">
+				<center>Please verify that all asset information in the Excel file are correct before proceeding.</center>
+			</div>
+			<div class = "modal-footer">
+				<center><h5>Are you sure?</h5></center>
+				<center><a class="btn btn-default" href="#add-another-asset" role="button" data-toggle="modal" data-dismiss="modal" style="margin-bottom: 5px;">Yes</a></center>
+				<center><a class="btn btn-default" href="#add-asset-form" role="button" data-dismiss="modal">No</a></center>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- ADD ANOTHER ASSET -->
+<div id="add-another-asset" class="modal fade">
+	<div class = "modal-dialog">
+		<div class = "modal-content">
+			<div class = "modal-header"></div>
+			<div class = "modal-body">Do you want to add another asset?</div>
+			<div class = "modal-footer">
+				<center><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-dismiss="modal" style="margin-bottom: 5px;">Yes</a></center>
+				<center><a class="btn btn-default" href="#" role="button" data-dismiss="modal">No</a></center>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--**********************-->
+<!--******* FOOTER *******-->
+<!--**********************-->
+
+<!--
+<footer style="margin-top: -50px;"><p class="credits">© PBI IT Asset Inventory System 2014. By Summit Consulting Group, Ateneo de Manila University.</p></footer>
+-->
+
+<!--***********************-->
+<!--******* SCRIPTS *******-->
+<!--***********************-->
+
+<!-- jQuery Core -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="../js/bootstrap.min.js"></script> 
+
+</body>
+</html>
