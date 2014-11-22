@@ -69,7 +69,7 @@
           <ul class="dropdown-menu" role="menu">
             <li><a href="../html/manage-assets.html">Manage</a></li>
             <li><a href="../html/add-asset.html">Add</a></li>
-            <li><a href="#">View All</a></li>
+            <li><a href="#viewassets" data-toggle="modal">View All</a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -229,6 +229,43 @@
 			</div>
 			<center><div class = "modal-body">
 				<h2>Scan Now!</h2>
+			</div></center>
+			<div class = "modal-footer">
+				<button class = "btn btn-danger" data-dismiss = "modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- View All Assets -->
+<div id = "viewassets" class = "modal fade">
+	<div class = "modal-dialog">
+		<div class = "modal-content">
+			<div class = "modal-header">
+				<h3>View All Assets</h3>
+			</div>
+			<center><div class = "modal-body">
+				<!--Paano lakihan yung modal-->
+				<table class="table" border="1">
+					<tr>
+						<th>Asset Number</th>
+						<th>Asset Type</th>
+						<th>Model</th>
+						<th>Serial Number</th>
+						<th>Status</th>
+						<th>Date of Purchase</th>
+						<th>Warranty Expiration</th>
+					</tr>
+					<tr>
+						<td>Asset Number</td>
+						<td>Asset Type</td>
+						<td>Model</td>
+						<td>Serial Number</td>
+						<td>Status</td>
+						<td>Date of Purchase</td>
+						<td>Warranty Expiration</td>
+					</tr>
+				</table>
 			</div></center>
 			<div class = "modal-footer">
 				<button class = "btn btn-danger" data-dismiss = "modal">Close</button>
