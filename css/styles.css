@@ -9,6 +9,10 @@ html, body {
    width: 100%;
 }
 
+.no-padding-top {
+  padding-top:0px;
+}
+
 .form-signin {
   max-width: 500px;
   padding: 15px;
