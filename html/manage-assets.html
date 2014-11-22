@@ -67,27 +67,27 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Assets<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Manage</a></li>
-            <li><a href="#">Add</a></li>
-            <li><a href="#">View All</a></li>
+            <li><a href="../html/manage-assets.html">Manage</a></li>
+            <li><a href="../html/add-asset.html">Add</a></li>
+            <li><a href="#viewassets" data-toggle="modal">View All</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Personnel<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Manage</a></li>
-            <li><a href="#">Add</a></li>
+            <li><a href="../html/manage-personnel.html">Manage</a></li>
+            <li><a href="../html/add-personnel.html">Add</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Create Account</a></li>
-            <li><a href="#">Manage Account</a></li>
-            <li><a href="#">Change Password</a></li>
+            <li><a href="../html/create-account.html">Create Account</a></li>
+            <li><a href="../html/edit-account-details.html">Manage Account</a></li>
+            <li><a href="../html/change-password.html">Change Password</a></li>
             <li class="divider"></li>
 			<li><a href="#">Adjust Barcode Fields</a></li>
-            <li><a href="#">Adjust Technology Refresher</a></li>
+            <li><a href="../html/adjust-technology-refresher.html">Adjust Technology Refresher</a></li>
             <li class="divider"></li>
             <li><a href="#">Database Backup</a></li>
           </ul>
@@ -255,6 +255,28 @@
 			</div>
 			<center><div class = "modal-body">
 				<h2>Scan Now!</h2>
+			</div></center>
+			<div class = "modal-footer">
+				<button class = "btn btn-danger" data-dismiss = "modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- View All Assets -->
+<div id = "viewassets" class = "modal fade">
+	<div class = "modal-dialog">
+		<div class = "modal-content">
+			<div class = "modal-header">
+				<h3>View All Assets</h3>
+			</div>
+			<center><div class = "modal-body">
+				<table border="1">
+					<tr>
+						<th>Sample header 1</th>
+						<th>Sample header 2</th>
+					</tr>
+				</table>
 			</div></center>
 			<div class = "modal-footer">
 				<button class = "btn btn-danger" data-dismiss = "modal">Close</button>
