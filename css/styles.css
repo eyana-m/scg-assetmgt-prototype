@@ -68,10 +68,8 @@ html, body {
 }
 
 #audit-trail-container {
-      position: relative;
       width: 100%;
       height:100%;
-      overflow: scroll;
 }
 
 #filter-row {
