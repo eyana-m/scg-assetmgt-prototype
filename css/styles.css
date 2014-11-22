@@ -70,7 +70,7 @@ html, body {
 #audit-trail-container {
       position: relative;
       width: 100%;
-      height:40vh;
+      height:100%;
       overflow: scroll;
 }
 
