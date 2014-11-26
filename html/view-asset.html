@@ -73,32 +73,15 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<div class="container-half">
+<div class="container-one-side">
 
-	<div class="col-md-3 col-sm-12">
-
-		<h3 style="margin:20px;">Asset Information</h3>
-
-		<h5 class="h5-no-margin">Barcode Number:</h5>
-		<h5 class="h5-no-margin">Model:</h5>
-		<h5 class="h5-no-margin">Tagged To:</h5>
-		<h5 class="h5-no-margin">Type:</h5>
-		<h5 class="h5-no-margin">ERF Number:</h5>
-		<h5 class="h5-no-margin">Serial Number:</h5>
-		<h5 class="h5-no-margin">Hostname:</h5>
-		<h5 class="h5-no-margin">Vendor:</h5>
-		<h5 class="h5-no-margin">Date of purchase:</h5>
-		<h5 class="h5-no-margin">Technology Refresher:</h5>
-		<h5 class="h5-no-margin">PO Number:</h5>
-		<h5 class="h5-no-margin">Cost:</h5>
-
-		<a class="btn btn-default" href="#tagpersonnel" role="button" data-toggle="modal">Tag to Personnel</a>
-
+	<div class="page-header" style="margin-left: 2.5em; margin-bottom: 0em;">
+		<h1>Audit Trail <small>of Asset</small></h1>
 	</div>
 
 	<div class="col-md-9 col-sm-12" >
-		<h3>Audit Trail</h3>
-	    	<table class="table table-striped table-bordered">
+		<div class="container" id="audit-trail-container">
+	    	<table class="table table-striped table-bordered table-audit-trail">
 	    		<thead>
 	    			<th>Date & Time</th>
 	    			<th>Status</th>
@@ -172,7 +155,28 @@
 					    <td><small>Assigned with a non-functioning keyboard</small></td>
 					</tr>
 	  		</table>
+			</div>
 	</div>
+
+	<div class="col-md-3 col-sm-12">
+
+<div class="panel panel-success panel-personnel" style="margin-left: 0">
+	<div class="panel-heading">Personnel Information</div>
+		<div class="panel-body" style="padding-left: 0.5em; padding-right: 0.5em">
+			<h5 class="h5-no-margin"><small>Barcode Number:</small> </h5>
+			<h5 class="h5-no-margin"><small>Model:</small> </h5>
+			<h5 class="h5-no-margin"><small>Tagged To:</small> </h5>
+			<h5 class="h5-no-margin"><small>Type:</small> </h5>
+			<h5 class="h5-no-margin"><small>ERF Number:</small> </h5>
+			<h5 class="h5-no-margin"><small>Serial Number:</small> </h5>
+			<h5 class="h5-no-margin"><small>Hostname:</small> </h5>
+			<h5 class="h5-no-margin"><small>Vendor:</small> </h5>
+			<h5 class="h5-no-margin"><small>Date of purchase:</small> </h5>
+			<h5 class="h5-no-margin"><small>Technology Refresher:</small> </h5>
+			<h5 class="h5-no-margin"><small>PO Number:</small> </h5>
+			<h5 class="h5-no-margin"><small>Cost: </small></h5>
+		</div>
+</div>
 
 </div>
 
