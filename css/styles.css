@@ -230,6 +230,12 @@ body {
   margin-right: 0em;
 }
 
+.panel-personnel-content{
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0.25em
+}
+
 .panel-gray,
 .panel-gray > .panel-heading {
   background-color: transparent;
