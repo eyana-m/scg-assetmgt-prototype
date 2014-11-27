@@ -94,6 +94,7 @@ h5 {
 
 /*custom font*/
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Exo);
 
 /*basic reset*/
 * {margin: 0; padding: 0;}
@@ -103,8 +104,9 @@ html {
 }
 
 body {
-  font-family: montserrat, arial, verdana;
-  background-color: #eee;
+  font-family: exo, montserrat, arial, verdana;
+  background-color: #dbdbdb;
+  padding-top: 60px;
 }
 /*form styles*/
 #msform {
@@ -245,6 +247,7 @@ body {
 
 .panel-personnel{
   background-color: #f9f9f9;
+  margin-bottom: 4px;
 }
 
 
@@ -256,4 +259,34 @@ body {
 
 .asset-info-panel {
   padding:3px 7px;
+}
+
+
+
+/**TESTING BY KEN**/
+.navbar {
+  font-family: exo, arial;
+  background-color: #c0392b;
+}
+
+.dropdown-toggle {
+  color:white;
+}
+
+.dropdown-menu {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+thead {
+  background-color: #797979;
+  color: white;
+}
+
+tbody {
+  background-color: #ecf0f1;
+}
+
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+background-color: #ec4e3e;
 }
