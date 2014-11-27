@@ -141,7 +141,7 @@ body {
   margin-bottom: 10px;
   width: 100%;
   box-sizing: border-box;
-  font-family: montserrat;
+  font-family: exo, montserrat;
   color: #2C3E50;
   font-size: 13px;
 }
@@ -270,7 +270,7 @@ body {
 }
 
 .dropdown-toggle {
-  color:white;
+  color:black;
 }
 
 .dropdown-menu {
