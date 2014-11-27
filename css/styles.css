@@ -309,10 +309,6 @@ label {
   font-family: exo, arial;
 }
 
-.panel .panel-success {
-  border-radius: 0px;
-}
-
 .no-margin {
   margin: 0px;
   margin-top: 8px;
@@ -326,10 +322,41 @@ select {
   border-radius: 0px;
 }
 
+.exo-font {
+  font-family: exo, montserrat, arial;
+}
+
 #scan-panel-body {
   padding: .75em;
 }
 
 .controls {
   display: inline-block;
+}
+
+.modal-footer {
+  border:0px;
+  background-color: #bdc3c7;
+  margin: 0px;
+  padding-top: 0px;
+  padding-right:30px;
+}
+
+.modal-body {
+  background-color: #bdc3c7;
+  padding: 25px 30px;
+}
+
+.jumbotron {
+  border-radius: 0px;
+  background-color: #4a4c4d;
+  color: white;
+}
+
+.panel .panel-success {
+  border-radius: 0px;
+}
+
+.no-border-radius {
+  border-radius: 0px;
 }
