@@ -161,76 +161,106 @@
 	<div class="col-md-3 col-sm-12" style="padding-left: 0">
 
 			<div class="panel panel-success panel-personnel">
-				<div class="panel-heading">Status</div>
-				<div class="panel-body">
-					<!---- ADD STATUS BUTTONS HERE-->
+				<div class="panel-heading" style="height: 50px">
+					<div class="col-xs-5">Status</div>
+					<div class="col-xs-7 text-right">
+						<span class="label label-success ">Active</span>
+					</div>
+				</div>
+				<div class="panel-body asset-info-panel">
+					<div class="col-md-12 no-padding">
+						<button class="btn btn-default btn-sm" style="width:100%; margin:2px 0px;">Active</button>
+					</div>
+					<div class="col-md-6 no-padding">
+						<button class="btn btn-default btn-sm" style="width:90%; margin:2px 0px;">Storage</button>
+					</div>
+					<div class="col-md-6 no-padding text-right">
+						<button class="btn btn-default btn-sm" style="width:90%; margin:2px 0px;">Disposal</button>
+					</div>
+					<div class="col-md-6 no-padding">
+						<button class="btn btn-default btn-sm" style="width:90%; margin:2px 0px;">For Repair</button>
+					</div>
+					<div class="col-md-6 no-padding text-right">
+						<button class="btn btn-default btn-sm" style="width:90%; margin:2px 0px;">Service Unit</button>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-success panel-personnel " style="margin-left: 0">
+				<div class="panel-heading">Asset Tagging</div>
+				<div class="panel-body asset-info-panel" style="padding-left: 0.5em; padding-right: 0.5em">
+					<div class="col-md-8 no-padding">
+						<button class="btn btn-primary btn-sm" style="width:90%; margin:5px 0px;">Tag to Personnel</button>
+					</div>
+					<div class="col-md-4 no-padding">
+						<button class="btn btn-danger btn-sm text-right" style="width:100%; margin:5px 0px;">Untag</button>
+					</div>
 				</div>
 			</div>
 
 			<div class="panel panel-success panel-personnel" style="margin-left: 0">
 				<div class="panel-heading">Asset Information</div>
-					<div class="panel-body" style="padding-left: 0.5em; padding-right: 0.5em">
+				<div class="panel-body" style="padding-left: 0.5em; padding-right: 0.5em">
 
-						<h5 class="h5-no-margin">
-							<div class="col-xs-5 panel-personnel-content"><small>Barcode Number:</small></div>
-							<div class="col-xs-7 panel-personnel-content text-right">LAP-1002014</div>
-						</h5>
+					<h5 class="h5-no-margin">
+						<div class="col-xs-5 panel-personnel-content"><small>Barcode Number:</small></div>
+						<div class="col-xs-7 panel-personnel-content text-right">LAP-1002014</div>
+					</h5>
 
-						<h5 class="h5-no-margin">
-							<div class="col-xs-5 panel-personnel-content"><small>Model:</small></div>
-							<div class="col-xs-7 panel-personnel-content text-right">HP Pavillion</div>
-						</h5>
+					<h5 class="h5-no-margin">
+						<div class="col-xs-5 panel-personnel-content"><small>Model:</small></div>
+						<div class="col-xs-7 panel-personnel-content text-right">HP Pavillion</div>
+					</h5>
 
-						<h5 class="h5-no-margin">
-							<div class="col-xs-5 panel-personnel-content"><small>Tagged To:</small></div>
-							<div class="col-xs-7 panel-personnel-content text-right"><a href="../html/view-personnel.html">Kennedy Espina</a></div>
-						</h5>
+					<h5 class="h5-no-margin">
+						<div class="col-xs-5 panel-personnel-content"><small>Tagged To:</small></div>
+						<div class="col-xs-7 panel-personnel-content text-right"><a href="../html/view-personnel.html">Kennedy Espina</a></div>
+					</h5>
 
-						<h5 class="h5-no-margin">
-							<div class="col-xs-5 panel-personnel-content"><small>Type:</small></div>
-							<div class="col-xs-7 panel-personnel-content text-right">LAPTOP</div>
-						</h5>
+					<h5 class="h5-no-margin">
+						<div class="col-xs-5 panel-personnel-content"><small>Type:</small></div>
+						<div class="col-xs-7 panel-personnel-content text-right">LAPTOP</div>
+					</h5>
 
-						<h5 class="h5-no-margin">
-							<div class="col-xs-5 panel-personnel-content"><small>ERF Number:</small></div>
-							<div class="col-xs-7 panel-personnel-content text-right">374-28273</div>
-						</h5>
+					<h5 class="h5-no-margin">
+						<div class="col-xs-5 panel-personnel-content"><small>ERF Number:</small></div>
+						<div class="col-xs-7 panel-personnel-content text-right">374-28273</div>
+					</h5>
 
-						<h5 class="h5-no-margin">
-							<div class="col-xs-5 panel-personnel-content"><small>Serial Number:</small></div>
-							<div class="col-xs-7 panel-personnel-content text-right">Serial Number</div>
-						</h5>
+					<h5 class="h5-no-margin">
+						<div class="col-xs-5 panel-personnel-content"><small>Serial Number:</small></div>
+						<div class="col-xs-7 panel-personnel-content text-right">Serial Number</div>
+					</h5>
 
-						<h5 class="h5-no-margin">
-							<div class="col-xs-5 panel-personnel-content"><small>Hostname:</small></div>
-							<div class="col-xs-7 panel-personnel-content text-right">Eyana</div>
-						</h5>
+					<h5 class="h5-no-margin">
+						<div class="col-xs-5 panel-personnel-content"><small>Hostname:</small></div>
+						<div class="col-xs-7 panel-personnel-content text-right">Eyana</div>
+					</h5>
 
-						<h5 class="h5-no-margin">
-							<div class="col-xs-5 panel-personnel-content"><small>Vendor:</small></div>
-							<div class="col-xs-7 panel-personnel-content text-right">HP, Inc.</div>
-						</h5>
+					<h5 class="h5-no-margin">
+						<div class="col-xs-5 panel-personnel-content"><small>Vendor:</small></div>
+						<div class="col-xs-7 panel-personnel-content text-right">HP, Inc.</div>
+					</h5>
 
-						<h5 class="h5-no-margin">
-							<div class="col-xs-5 panel-personnel-content"><small>Date of purchase:</small></div>
-							<div class="col-xs-7 panel-personnel-content text-right">Feb 30, 2014</div>
-						</h5>
+					<h5 class="h5-no-margin">
+						<div class="col-xs-5 panel-personnel-content"><small>Date of purchase:</small></div>
+						<div class="col-xs-7 panel-personnel-content text-right">Feb 30, 2014</div>
+					</h5>
 
-						<h5 class="h5-no-margin">
-							<div class="col-xs-6 panel-personnel-content"><small>Technology Refresher:</small></div>
-							<div class="col-xs-6 panel-personnel-content text-right"> Feb 30, 2017 (3 Years)</div>
-						</h5>
+					<h5 class="h5-no-margin">
+						<div class="col-xs-6 panel-personnel-content"><small>Technology Refresher:</small></div>
+						<div class="col-xs-6 panel-personnel-content text-right"> Feb 30, 2017 (3 Years)</div>
+					</h5>
 
-						<h5 class="h5-no-margin">
-							<div class="col-xs-5 panel-personnel-content"><small>PO Number:</small></div>
-							<div class="col-xs-7 panel-personnel-content text-right"> 374-28273</div>
-						</h5>
+					<h5 class="h5-no-margin">
+						<div class="col-xs-5 panel-personnel-content"><small>PO Number:</small></div>
+						<div class="col-xs-7 panel-personnel-content text-right"> 374-28273</div>
+					</h5>
 
-						<h5 class="h5-no-margin">
-							<div class="col-xs-5 panel-personnel-content"><small>Cost:</small></div>
-							<div class="col-xs-7 panel-personnel-content text-right">PHP 25,000</div>
-						</h5>
-					</div>
+					<h5 class="h5-no-margin">
+						<div class="col-xs-5 panel-personnel-content"><small>Cost:</small></div>
+						<div class="col-xs-7 panel-personnel-content text-right">PHP 25,000</div>
+					</h5>
+				</div>
 			</div>
 
 </div>

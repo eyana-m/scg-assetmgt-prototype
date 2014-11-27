@@ -45,8 +45,6 @@
   background: black;
 }
 
-
-
 .form-element label {
     display: inline-block;
     width: 150px;
@@ -55,6 +53,10 @@
 #fixed-container {
       position: fixed;
       width: inherit;
+}
+
+.no-padding {
+  padding:0px;
 }
 
 #audit-trail-container {
@@ -249,4 +251,9 @@ body {
 .table-audit-trail
  {
   font-size: 1em;
+}
+
+
+.asset-info-panel {
+  padding:3px 7px;
 }
