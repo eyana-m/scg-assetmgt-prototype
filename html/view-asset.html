@@ -166,19 +166,20 @@
 				</div>
 				<div class="panel-body asset-info-panel">
 					<div class="col-md-12 no-padding">
-						<button class="btn btn-default btn-sm" style="width:100%; margin:2px 0px;">Active</button>
+						<a class="btn btn-default btn-sm" href="#changestatus" role="button" data-toggle="modal" data-dismiss = "modal" style="width:100%; margin:2px 0px;">Active</a>
 					</div>
 					<div class="col-md-6 no-padding">
-						<button class="btn btn-default btn-sm" style="width:90%; margin:2px 0px;">Storage</button>
+						<a class="btn btn-default btn-sm" href="#changestatus" role="button" data-toggle="modal" data-dismiss = "modal" style="width:90%; margin:2px 0px;">Storage</a>
 					</div>
 					<div class="col-md-6 no-padding text-right">
-						<button class="btn btn-default btn-sm" style="width:90%; margin:2px 0px;">Disposal</button>
+
+						<a class="btn btn-default btn-sm" href="#changestatus" role="button" data-toggle="modal" data-dismiss = "modal" style="width:90%; margin:2px 0px;">For Disposal</a>
 					</div>
 					<div class="col-md-6 no-padding">
-						<button class="btn btn-default btn-sm" style="width:90%; margin:2px 0px;">For Repair</button>
+						<a class="btn btn-default btn-sm" href="#changestatus" role="button" data-toggle="modal" data-dismiss = "modal" style="width:90%; margin:2px 0px;">For Repair</a>
 					</div>
 					<div class="col-md-6 no-padding text-right">
-						<button class="btn btn-default btn-sm" style="width:90%; margin:2px 0px;">Service Unit</button>
+						<a class="btn btn-default btn-sm" href="#changestatus" role="button" data-toggle="modal" data-dismiss = "modal" style="width:90%; margin:2px 0px;">Service Unit</a>
 					</div>
 				</div>
 			</div>
@@ -330,30 +331,20 @@
 	</div>
 </div>
 
-<!-- TAG PERSONNEL -->
-<div id = "tagpersonnel" class = "modal fade">
+
+
+<!-- SCAN BARCODE TO CHANGE STATUS-->
+<div id = "scanbarcode-changestatus" class = "modal fade">
 	<div class = "modal-dialog">
 		<div class = "modal-content">
-
 			<div class = "modal-header">
-				<h3>Tag to Personnel</h3>
+				<h3>Change Status</h3>
 			</div>
-
-			<div class = "modal-body">
-				<div class="form-group">
-					<div class="row-fluid">
-							<label for="idnumber" class="span6">Personnel ID Number:</label>
-							<input type="text" class="form-control span6" id="idnumber">
-					</div>
+			<center><div class = "modal-body">
+				<div class="jumbotron">
+					<h2 class="exo-font" style="margin-top:10px;">Scan Now...</h2>
 				</div>
-				<h4>Personnel Name: </h4>
-				<h4>Office: </h4>
-				<h4>Department: </h4>
-				<center>
-					<h5>If the information above are correct, click Proceed</h5>
-					<a class="btn btn-default" href="#scanbarcode" role="button" data-toggle="modal" data-dismiss = "modal">Proceed</a>
-				<center>
-			</div>
+			</div></center>
 			<div class = "modal-footer">
 				<button class = "btn btn-danger" data-dismiss = "modal">Close</button>
 			</div>
@@ -361,18 +352,21 @@
 	</div>
 </div>
 
-<!-- SCAN BARCODE -->
-<div id = "scanbarcode" class = "modal fade">
+<!-- Change Status -->
+<div id = "changestatus" class = "modal fade">
 	<div class = "modal-dialog">
 		<div class = "modal-content">
 			<div class = "modal-header">
-				<h3>Scan Barcode</h3>
+				<h3>Change Status</h3>
 			</div>
 			<center><div class = "modal-body">
-				<h2>Scan Now!</h2>
+				<div class="jumbotron">
+					<h4 class="exo-font" style="margin-top:10px;">The Status of Asset *Insert Asset Number* would be changed from *Insert Current Status* to *Insert New Status*</h2>
+				</div>
 			</div></center>
 			<div class = "modal-footer">
-				<button class = "btn btn-danger" data-dismiss = "modal">Close</button>
+				<button class = "btn btn-danger btn-lg" data-dismiss = "modal">Close</button>
+				<a class="btn btn-default btn-lg" href="#scanbarcode-changestatus" role="button" data-toggle="modal" data-dismiss = "modal">Change Status</a>
 			</div>
 		</div>
 	</div>

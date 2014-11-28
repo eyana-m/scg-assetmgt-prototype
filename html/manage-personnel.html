@@ -98,81 +98,86 @@
 </nav>
 
 <!--*****************************-->
-<!--******* MANAGE ASSETS *******-->
+<!--******* MANAGE PERSONNEL *******-->
 <!--*****************************-->
 
-<div class="col-md-7 col-sm-12" >
-	<table class="table table-striped table-bordered" style="width:100%">
-		<tr>
+<div class="col-md-8 col-sm-12" >
+	<h3 class="exo-font">All Personnel</h3>
+	<table class="table table-striped table-bordered table-audit-trail">
+		<thead>
 			<th><input type="checkbox" /></th>
 			<th>Personnel Number</th>
 			<th>Personnel Name</th>
 			<th>Job Department</th>
 			<th>Level</th>
 			<th>Position</th>
-		</tr>
+		</thead>
 		<tr>
 			<td><input type="checkbox" /></td>
-			<td>Personnel Number</td>
-			<td>Personnel Name</td>
-			<td>Job Department</td>
-			<td>Level</td>
-			<td>Position</td>
+			<td><a href="../html/view-personnel.html">111457</a></td>
+			<td>Espina, Kennedy E.</td>
+			<td>IT Department</td>
+			<td>4</td>
+			<td>BI Specialist</td>
 		</tr>
 
   	</table>
 </div>
 <div class="col-md-4 col-sm-12">
-	<div class="container" id="fixed-container" style="width:inherit;">
-		<div class="row" id="filter-row">
-			FILTER BY:
-    		<form role="form">
-			  <div class="form-group">
-			    <label for="name">Personnel Name:</label>
-			    <input type="text" class="form-control" id="name">
-			  </div>
-			  <div class="form-group">
-			    <label for="job-department">Job Department:</label>
-			    <select class="form-control" id="job-department">
-				  <option>1</option>
-				  <option>2</option>
-				  <option>3</option>
-				  <option>4</option>
-				  <option>5</option>
-				</select>
-			  </div>
-			  <div class="form-group" style="position:relative;width:100%;">
-			    <label for="level">Level:</label>
-			    <select class="form-control" id="level">
-				  <option>1</option>
-				  <option>2</option>
-				  <option>3</option>
-				  <option>4</option>
-				  <option>5</option>
-				</select>
-			  </div>
-			  <div class="form-group">
-			    <label for="position">Position:</label>
-			    <select class="form-control" id="position">
-				  <option>1</option>
-				  <option>2</option>
-				  <option>3</option>
-				  <option>4</option>
-				  <option>5</option>
-				</select>
-			  </div>
-			  <div class="form-group">
-			    <label for="date-added">Date Added:</label>
-			    <select class="form-control" id="date-added">
-				  <option>1</option>
-				  <option>2</option>
-				  <option>3</option>
-				  <option>4</option>
-				  <option>5</option>
-				</select>
-			  </div>
-			</form>
-		</div>
+	<div class="panel panel-success panel-personnel" style="margin-left: 0;">
+			<div class="panel-heading filter-heading">Filter By:</div>
+			<div class="panel-body asset-info-panel">
+	    		<form role="form">
+					<div class = "form-group">
+					    <label class= "control-label" for="name"><small>Personnel Name:</small></label>
+					    <div class="controls">
+					    	<input type="text" class="form-control" id="name">
+					    </div>
+					  </div>
+					<div class="form-group">
+					    <label for="jobdepartment"><small>Job Department:</small></label>
+					    <div class="controls">
+					    	<select class="form-control" id="jobdepartment">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+					    <label for="level"><small>Level:</small></label>
+					    <div class="controls">
+					    	<select class="form-control" id="level">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
+					</div>
+				 	<div class="form-group">
+					    <label for="position"><small>Position:</small></label>
+					    <div class="controls">
+					    	<select class="form-control" id="position">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+					    <label for="added"><small>Date Added:</small></label>
+					    <div class="controls">
+					    	<input type="date" class="form-control" id="added">
+					    </div>
+					</div>
+				</form>
+			</div>
 	</div>
 </div>
 
