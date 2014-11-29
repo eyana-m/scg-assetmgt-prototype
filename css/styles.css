@@ -278,13 +278,7 @@ tbody {
 background-color: #ec4e3e;
 }
 
-.form-control {
-  border-radius: 0px;
-  padding: 1px 12px;
-  height: 30px;
-  width: 200px;
 
-}
 
 .form-group {
   margin-bottom:5px;
@@ -368,5 +362,5 @@ select {
 }
 
 .active {
-  background-color: #ec4e3e;
+  /*background-color: rgba(238,73, 62, 0.5);*/
 }
