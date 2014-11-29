@@ -25,18 +25,20 @@
   z-index: 2;
 }
 .form-signin input[type="email"] {
-  margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+  margin: 0.5em;
+  width: 100%;
 }
 .form-signin input[type="password"] {
-  margin-bottom: 10px;
+  margin: 0.5em;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  width: 100%;
 }
 
 .jumbotron {
-  background-color: #cccccb;
+  background-color: #aaa;
   border-radius: 10px;
   padding: 20px 50px;
   margin-bottom: 0px;
@@ -347,11 +349,6 @@ select {
   padding: 25px 30px;
 }
 
-.jumbotron {
-  border-radius: 0px;
-  background-color: #4a4c4d;
-  color: white;
-}
 
 .panel .panel-success {
   border-radius: 0px;
