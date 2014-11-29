@@ -93,7 +93,8 @@ html {
 body {
   font-family: exo, montserrat, arial, verdana;
   background-color: #dbdbdb;
-  padding-top: 60px;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 /*form styles*/
 #msform {
