@@ -24,23 +24,23 @@
 </head>
 <body class="no-padding-top">
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-	<div class="container-fluid ">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header col-sm-7">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" style="color:white;" href="../html/dashboard.html">PBI IT Asset Inventory System</a>
-		</div>
+  <div class="container-fluid ">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header col-sm-7">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" style="color:white;" href="../html/dashboard.html">PBI IT Asset Inventory System</a>
+    </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse col-sm-7" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" style="color:white;" data-toggle="dropdown">Assets<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle active" style="color:white;" data-toggle="dropdown">Assets<span class="caret"></span></a>
           <ul class="dropdown-menu" style="color:white;" role="menu">
             <li><a href="../html/manage-assets.html">Manage</a></li>
             <li><a href="../html/add-asset.html">Add</a></li>
@@ -66,6 +66,9 @@
             <li class="divider"></li>
             <li><a href="#">Database Backup</a></li>
           </ul>
+        </li>
+        <li>
+          <a id="scanbutton" class="btn btn-danger navbar-btn" href="#scanbarcode" role="button" data-toggle="modal" style="color:white; padding:5px; margin-left:25px;">Scan Barcode</a>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -127,7 +130,7 @@
 		<div class="panel panel-danger panel-personnel">
 			<div class="panel-heading">Report Generation</div>
 			<div class="panel-body">
-				<div class="dropdown">
+				<div class="dropdown no-border-radius">
 					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true" style="display: inline-block; width: 100%">
 						All Assigned Assets
 						<span class="caret"></span>
@@ -138,8 +141,8 @@
 					</ul>
 				</div>
 			</div>
-			<div class = "panel-footer" style="height:53px">
-				<button class="btn btn-primary pull-right" style="width:30%;">Generate</a>
+			<div class = "panel-footer" style="overflow:auto;">
+				<center><button class="btn btn-primary" style="width:80%;">Generate</button></center>
 			</div>
 		</div>
 
