@@ -168,21 +168,19 @@
 					</div>
 				</div>
 				<div class="panel-body asset-info-panel">
-					<div class="col-md-12 no-padding">
-						<a class="btn btn-default btn-sm" href="#changestatus" role="button" data-toggle="modal" data-dismiss = "modal" style="width:100%; margin:2px 0px;">Active</a>
-					</div>
-					<div class="col-md-6 no-padding">
-						<a class="btn btn-default btn-sm" href="#changestatus" role="button" data-toggle="modal" data-dismiss = "modal" style="width:90%; margin:2px 0px;">Storage</a>
-					</div>
-					<div class="col-md-6 no-padding text-right">
-
-						<a class="btn btn-default btn-sm" href="#changestatus" role="button" data-toggle="modal" data-dismiss = "modal" style="width:90%; margin:2px 0px;">For Disposal</a>
-					</div>
-					<div class="col-md-6 no-padding">
-						<a class="btn btn-default btn-sm" href="#changestatus" role="button" data-toggle="modal" data-dismiss = "modal" style="width:90%; margin:2px 0px;">For Repair</a>
-					</div>
-					<div class="col-md-6 no-padding text-right">
-						<a class="btn btn-default btn-sm" href="#changestatus" role="button" data-toggle="modal" data-dismiss = "modal" style="width:90%; margin:2px 0px;">Service Unit</a>
+					<div class="dropdown no-border-radius">
+						<button class="btn btn-default dropdown-toggle" type="button" id="jobdepartment" data-toggle="dropdown" aria-expanded="true" style="display: inline-block; width: 100%">
+							*Current Status*
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Active</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Storage</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">For Repair</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">For Disposal</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Service Unit</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Disposed</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>

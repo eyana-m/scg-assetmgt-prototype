@@ -130,16 +130,16 @@
 	<div class="panel panel-danger panel-personnel" style="margin-left: 0;">
 			<div class="panel-heading filter-heading">Filter By:</div>
 			<div class="panel-body asset-info-panel">
-	    		<form role="form">
+	    		<form class="form-horizontal" role="form">
 					<div class = "form-group">
-					    <label class= "control-label" for="name"><small>Personnel Name:</small></label>
-					    <div class="controls">
+					    <label class= "col-md-4 control-label" for="name"><small>Personnel Name:</small></label>
+					    <div class="col-md-8 controls">
 					    	<input type="text" class="form-control" id="name">
 					    </div>
 					  </div>
 					<div class="form-group">
-					    <label for="jobdepartment"><small>Job Department:</small></label>
-					    <div class="controls">
+					    <label class= "col-md-4 control-label" for="jobdepartment"><small>Job Department:</small></label>
+					    <div class="col-md-8 controls">
 					    	<div class="dropdown no-border-radius">
 								<button class="btn btn-default dropdown-toggle" type="button" id="jobdepartment" data-toggle="dropdown" aria-expanded="true" style="display: inline-block; width: 100%">
 									All Departments
@@ -153,8 +153,8 @@
 						</div>
 					</div>
 					<div class="form-group">
-					    <label for="level"><small>Level:</small></label>
-					    <div class="controls">
+					    <label class= "col-md-4 control-label" for="level"><small>Level:</small></label>
+					    <div class="col-md-8 controls">
 					    	<div class="dropdown no-border-radius">
 								<button class="btn btn-default dropdown-toggle" type="button" id="level" data-toggle="dropdown" aria-expanded="true" style="display: inline-block; width: 100%">
 									All Levels
@@ -168,8 +168,8 @@
 						</div>
 					</div>
 				 	<div class="form-group">
-					    <label for="position"><small>Position:</small></label>
-					    <div class="controls">
+					    <label class= "col-md-4 control-label" for="position"><small>Position:</small></label>
+					    <div class="col-md-8 controls">
 					    	<div class="dropdown no-border-radius">
 								<button class="btn btn-default dropdown-toggle" type="button" id="position" data-toggle="dropdown" aria-expanded="true" style="display: inline-block; width: 100%">
 									All Positions
@@ -183,8 +183,8 @@
 						</div>
 					</div>
 					<div class="form-group">
-					    <label for="added"><small>Date Added:</small></label>
-					    <div class="controls">
+					    <label class= "col-md-4 control-label" for="added"><small>Date Added:</small></label>
+					    <div class="col-md-8 controls">
 					    	<input type="date" class="form-control" id="added">
 					    </div>
 					</div>
@@ -242,13 +242,15 @@
 	<div class = "modal-dialog">
 		<div class = "modal-content">
 			<div class = "modal-header">
-				<h3>Scan Barcode</h3>
+				<center><h3 class="no-margin exo-font">Scan Barcode</h3></center>
 			</div>
 			<center><div class = "modal-body">
-				<h2>Scan Now!</h2>
+				<div class="jumbotron">
+					<h2 class="exo-font" style="margin-top:10px;">Scan Now...</h2>
+				</div>
 			</div></center>
 			<div class = "modal-footer">
-				<button class = "btn btn-danger" data-dismiss = "modal">Close</button>
+				<button class = "btn btn-danger btn-lg no-border-radius" data-dismiss = "modal">Close</button>
 			</div>
 		</div>
 	</div>

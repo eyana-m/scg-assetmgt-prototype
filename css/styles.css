@@ -240,7 +240,7 @@ body {
 
 
 .table-audit-trail
- {
+{
   font-size: 1em;
 }
 
@@ -282,7 +282,7 @@ background-color: #ec4e3e;
 
 
 .form-group {
-  margin-bottom:5px;
+  margin-bottom: 5px;
 }
 
 label {
@@ -372,6 +372,8 @@ select {
 
 .control-label {
   border: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .navbar-button {
