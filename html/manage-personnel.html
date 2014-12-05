@@ -60,41 +60,43 @@
 			</button>
 			<a class="navbar-brand" style="color:white;" href="../html/dashboard.html">PBI IT Asset Inventory System</a>
 		</div>
-
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse col-sm-7 pull-right" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" style="color:white;" data-toggle="dropdown">Assets<span class="caret"></span></a>
-					<ul class="dropdown-menu" style="color:white;" role="menu">
-						<li><a href="../html/manage-assets.html">Manage</a></li>
-						<li><a href="../html/add-asset.html">Add</a></li>
-						<li><a href="#viewassets" data-toggle="modal">View All</a></li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" style="color:white;" data-toggle="dropdown">Personnel<span class="caret"></span></a>
-					<ul class="dropdown-menu" style="color:white;" role="menu">
-						<li><a href="../html/manage-personnel.html">Manage</a></li>
-						<li><a href="../html/add-personnel.html">Add</a></li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" style="color:white;" data-toggle="dropdown">Settings<span class="caret"></span></a>
-					<ul class="dropdown-menu pull-left"  style="right: 0; left: auto; color: white" role="menu">
-						<li><a href="../html/create-account.html">Create Account</a></li>
-						<li><a href="../html/edit-account-details.html">Manage Account</a></li>
-						<li><a href="../html/change-password.html">Change Password</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Adjust Barcode Fields</a></li>
-						<li><a href="../html/adjust-technology-refresher.html">Adjust Technology Refresher</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Database Backup</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div><!-- /.navbar-collapse -->
-	</div><!-- /.container-fluid -->
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse col-sm-7" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle active" style="color:white;" data-toggle="dropdown">Assets<span class="caret"></span></a>
+          <ul class="dropdown-menu" style="color:white;" role="menu">
+            <li><a href="../html/manage-assets.html">Manage</a></li>
+            <li><a href="../html/add-asset.html">Add</a></li>
+            <li><a href="#viewassets" data-toggle="modal">View All</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" style="color:white;" data-toggle="dropdown">Personnel<span class="caret"></span></a>
+          <ul class="dropdown-menu" style="color:white;" role="menu">
+            <li><a href="../html/manage-personnel.html">Manage</a></li>
+            <li><a href="../html/add-personnel.html">Add</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" style="color:white;" data-toggle="dropdown">Settings<span class="caret"></span></a>
+          <ul class="dropdown-menu" style="color:white;" role="menu">
+            <li><a href="../html/create-account.html">Create Account</a></li>
+            <li><a href="../html/edit-account-details.html">Manage Account</a></li>
+            <li><a href="../html/change-password.html">Change Password</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Adjust Barcode Fields</a></li>
+            <li><a href="../html/adjust-technology-refresher.html">Adjust Technology Refresher</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Database Backup</a></li>
+          </ul>
+        </li>
+        <li>
+          <a id="scanbutton" class="btn btn-danger navbar-btn" href="#scanbarcode" role="button" data-toggle="modal" style="color:white; padding:5px; margin-left:25px;">Scan Barcode</a>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
 </nav>
 
 <!--*****************************-->
@@ -124,8 +126,13 @@
 
   	</table>
 </div>
+<<<<<<< HEAD
 <div class="col-md-3 col-sm-12">
 	<div class="panel panel-success panel-personnel" style="margin-left: 0;">
+=======
+<div class="col-md-4 col-sm-12">
+	<div class="panel panel-danger panel-personnel" style="margin-left: 0;">
+>>>>>>> f5312fe26268daec19aa54fb15d661c47820519b
 			<div class="panel-heading filter-heading">Filter By:</div>
 			<div class="panel-body asset-info-panel">
 	    		<form role="form">
@@ -138,6 +145,7 @@
 					<div class="form-group">
 					    <label for="jobdepartment"><small>Job Department:</small></label>
 					    <div class="controls">
+<<<<<<< HEAD
 					    	<select class="form-control form-controller-small" id="jobdepartment">
 								<option>1</option>
 								<option>2</option>
@@ -145,11 +153,24 @@
 								<option>4</option>
 								<option>5</option>
 							</select>
+=======
+					    	<div class="dropdown no-border-radius">
+								<button class="btn btn-default dropdown-toggle" type="button" id="jobdepartment" data-toggle="dropdown" aria-expanded="true" style="display: inline-block; width: 100%">
+									All Departments
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Job Department 1</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Job Department 2</a></li>
+								</ul>
+							</div>
+>>>>>>> f5312fe26268daec19aa54fb15d661c47820519b
 						</div>
 					</div>
 					<div class="form-group">
 					    <label for="level"><small>Level:</small></label>
 					    <div class="controls">
+<<<<<<< HEAD
 					    	<select class="form-control form-controller-small" id="level">
 								<option>1</option>
 								<option>2</option>
@@ -157,11 +178,24 @@
 								<option>4</option>
 								<option>5</option>
 							</select>
+=======
+					    	<div class="dropdown no-border-radius">
+								<button class="btn btn-default dropdown-toggle" type="button" id="level" data-toggle="dropdown" aria-expanded="true" style="display: inline-block; width: 100%">
+									All Levels
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Level 1</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Level 2</a></li>
+								</ul>
+							</div>
+>>>>>>> f5312fe26268daec19aa54fb15d661c47820519b
 						</div>
 					</div>
 				 	<div class="form-group">
 					    <label for="position"><small>Position:</small></label>
 					    <div class="controls">
+<<<<<<< HEAD
 					    	<select class="form-control form-controller-small" id="position">
 								<option>1</option>
 								<option>2</option>
@@ -169,6 +203,18 @@
 								<option>4</option>
 								<option>5</option>
 							</select>
+=======
+					    	<div class="dropdown no-border-radius">
+								<button class="btn btn-default dropdown-toggle" type="button" id="position" data-toggle="dropdown" aria-expanded="true" style="display: inline-block; width: 100%">
+									All Positions
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Position 1</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Position 2</a></li>
+								</ul>
+							</div>
+>>>>>>> f5312fe26268daec19aa54fb15d661c47820519b
 						</div>
 					</div>
 					<div class="form-group">

@@ -46,8 +46,8 @@
 <!--******* NAVIGATION BAR *******-->
 <!--******************************-->
 
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid ">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header col-sm-7">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -56,30 +56,30 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">PBI IT Asset Inventory System</a>
+      <a class="navbar-brand" style="color:white;" href="../html/dashboard.html">PBI IT Asset Inventory System</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse col-sm-7" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Assets<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
+          <a href="#" class="dropdown-toggle active" style="color:white;" data-toggle="dropdown">Assets<span class="caret"></span></a>
+          <ul class="dropdown-menu" style="color:white;" role="menu">
             <li><a href="../html/manage-assets.html">Manage</a></li>
             <li><a href="../html/add-asset.html">Add</a></li>
             <li><a href="#viewassets" data-toggle="modal">View All</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Personnel<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
+          <a href="#" class="dropdown-toggle" style="color:white;" data-toggle="dropdown">Personnel<span class="caret"></span></a>
+          <ul class="dropdown-menu" style="color:white;" role="menu">
             <li><a href="../html/manage-personnel.html">Manage</a></li>
             <li><a href="../html/add-personnel.html">Add</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
+          <a href="#" class="dropdown-toggle" style="color:white;" data-toggle="dropdown">Settings<span class="caret"></span></a>
+          <ul class="dropdown-menu" style="color:white;" role="menu">
             <li><a href="../html/create-account.html">Create Account</a></li>
             <li><a href="../html/edit-account-details.html">Manage Account</a></li>
             <li><a href="../html/change-password.html">Change Password</a></li>
@@ -89,6 +89,9 @@
             <li class="divider"></li>
             <li><a href="#">Database Backup</a></li>
           </ul>
+        </li>
+        <li>
+          <a id="scanbutton" class="btn btn-danger navbar-btn" href="#scanbarcode" role="button" data-toggle="modal" style="color:white; padding:5px; margin-left:25px;">Scan Barcode</a>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->

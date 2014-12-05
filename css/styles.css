@@ -93,7 +93,7 @@ html {
 body {
   font-family: exo, montserrat, arial, verdana;
   background-color: #dbdbdb;
-  padding-top: 3em;
+  padding-top: 4em;
   padding-bottom: 3em;
 }
 /*form styles*/
@@ -374,4 +374,16 @@ select {
 
 .active {
   /*background-color: rgba(238,73, 62, 0.5);*/
+}
+
+#navmenu:hover { 
+    background-color: #ec4e3e;
+}
+
+.control-label {
+  border: 0px;
+}
+
+.navbar-button {
+  padding:15px;
 }
