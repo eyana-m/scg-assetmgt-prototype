@@ -16,7 +16,7 @@
   <!--*********************-->
   <!--******* TITLE *******-->
     <!--*********************-->
-  <title>PBI IT Asset Inventory System - Change Password</title>
+  <title>Create New Account</title>
 
     <!--***********************-->
     <!--********* CSS *********-->
@@ -98,19 +98,17 @@
 <!--*******************************-->
 <!--******* CHANGE PASSWORD *******-->
 <!--*******************************-->
-
+<h3 class="exo-font" style="margin-left:25px">Member Information</h3>
 <div class="container" style="background-color: #cccccb; margin-top:60px;">
 
-  <h3>Member Information</h3>
-<!-- Tab Panes -->
-  <div class="tab-content">
-    <div class="tab-pane fade in active" id="hardware">
+  
+
     <!-- Start Add Hardware Form -->
-      <form class="form-horizontal" role="form" action="#" method="POST" enctype="multipart/form-data" onsubmit="#">
+      <form class="form-horizontal" role="form">
         <div class="row" style="padding-top: 35px;">
           <div class="col-md-12">
             <div class="form-group">
-              <label for="personnel-number" class="col-sm-4 control-label">Personnel Number</label>
+              <label for="personnel-number" class="col-sm-4 control-label">Personnel Number:</label>
               <div class="col-sm-5">
                 <input type="text" class="form-control" id="personnel-number" placeholder="Personnel Number">
               </div>
@@ -122,24 +120,34 @@
               </div>
             </div>
             <div class="form-group">
-              <label for="job-department">Job Department:</label>
-              <select class="form-control" id="job-department">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
+              <label class= "control-label col-md-4" for="job-department"><small>Job Department:</small></label>
+              <div class="col-md-5 controls">
+                <div class="dropdown no-border-radius">
+                <button class="btn btn-default dropdown-toggle" type="button" id="job-department" data-toggle="dropdown" aria-expanded="true" style="display: inline-block; width: 100%">
+                  Select Job Department
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu full-width" role="menu" aria-labelledby="dropdownMenu1">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><center>Job Department 1</center></a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><center>Job Department 2</center></a></li>
+                </ul>
+              </div>
             </div>
+          </div>
             <div class="form-group">
-              <label for="level">Level:</label>
-              <select class="form-control" id="level">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
+              <label class= "control-label col-md-4" for="level"><small>Level:</small></label>
+              <div class="col-md-5 controls">
+                <div class="dropdown no-border-radius">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="level" data-toggle="dropdown" aria-expanded="true" style="display: inline-block; width: 100%">
+                    Select Level
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu full-width" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><center>level 1</center></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><center>level 2</center></a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <div class="form-group">
               <label for="position" class="col-sm-4 control-label">Position</label>
@@ -160,21 +168,24 @@
               </div>
             </div>
             <div class="form-group">
-              <label for="level">Membership Level:</label>
-              <select class="form-control" id="level">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
+              <label class= "control-label col-md-4" for="membership-level"><small>Membership Level:</small></label>
+              <div class="col-md-5 controls">
+                <div class="dropdown no-border-radius">
+                <button class="btn btn-default dropdown-toggle" type="button" id="level" data-toggle="dropdown" aria-expanded="true" style="display: inline-block; width: 100%">
+                  Select Membership Level
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu full-width" role="menu" aria-labelledby="dropdownMenu1">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><center>Membership Level 1</center></a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><center>Membership Level 2</center></a></li>
+                </ul>
+              </div>
             </div>
+          </div>
             <center><a class="btn btn-default" role="button" data-toggle="modal" style="margin-bottom: 30px;">Add</a></center>
           </div>
         </div>
       </form>
-    </div>
-  </div>
 </div>
 
 <!-- View All Assets -->
