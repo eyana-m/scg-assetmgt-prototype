@@ -331,6 +331,10 @@ select {
   display: inline-block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .modal-footer {
   border:0px;
   background-color: #bdc3c7;
@@ -382,4 +386,8 @@ select {
 
 .full-width {
   width:100%;
+}
+
+#adjust-tech-container {
+  height: 100%;
 }

@@ -100,81 +100,81 @@
 <!--******* ADJUST *******-->
 <!--**********************-->
 
-<div class="container" style="background-color: #cccccb; margin-top:60px;">
+<div class="container" style="background-color: #cccccb; margin-top:60px; height" id="adjust-tech-container">
 	<!-- multistep form -->
-<form id="msform" class="form-horizontal" role="form" action="#" method="POST" enctype="multipart/form-data" onsubmit="#">
-  <!-- progressbar -->
-  <ul id="progressbar">
-    <li class="active">Choose Asset</li>
-    <li>Adjust</li>
-    <li>Verify</li>
-    <li>Complete</li>
-  </ul>
-  <!-- fieldsets -->
-  <fieldset>
-    <h2 class="fs-title">Choose Asset</h2>
-    <div class="form-group">
-    <label class="col-sm-4 control-label">Category</label>
-    <div class="col-sm-8">
-        <label class="radio-inline"> <input type="radio" name="category" id="hardwareCategory" value="hardware" checked> Hardware </label>
-        <label class="radio-inline"> <input type="radio" name="category" id="softwareCategory" value="software"> Software </label>
-    </div>
-    </div>
-
-    <div class="form-group">
-      <label for="type" class="col-sm-4 control-label">Asset Type</label>
-      <div class="col-sm-7">
-        <select class="form-control">
-          <option value="access-point">Access Point</option>
-          <option value="camera">Camera</option>
-          <option value="desktop">Desktop</option>
-          <option value="digital-camera">Digital Camera</option>
-          <option value="external-hd">External Hard Disk</option>
-          <option value="laptop">Laptop</option>
-          <option value="monitor">Monitor</option>
-          <option value="mouse">Mouse</option>
-          <option value="printer">Printer</option>
-          <option value="projector">Projector</option>
-          <option value="server">Server</option>
-          <option value="switch">Switch</option>
-          <option value="tv">TV</option>
-          <option value="ups">UPS</option>
-          <option value="video-conference">Video Conference</option>
-        </select>
+  <form id="msform" class="form-horizontal" role="form" action="#" method="POST" enctype="multipart/form-data" onsubmit="#">
+    <!-- progressbar -->
+    <ul id="progressbar">
+      <li class="active">Choose Asset</li>
+      <li>Adjust</li>
+      <li>Verify</li>
+      <li>Complete</li>
+    </ul>
+    <!-- fieldsets -->
+    <fieldset>
+        <h2 class="fs-title">Choose Asset</h2>
+        <div class="form-group">
+          <label class="col-sm-4 control-label">Category</label>
+          <div class="col-sm-8">
+              <label class="radio-inline"><input type="radio" name="category" id="hardwareCategory" value="hardware" checked style="width:5px;">Hardware</label>
+              <label class="radio-inline"><input type="radio" name="category" id="softwareCategory" value="software" style="width:5px;">Software</label>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="type" class="col-sm-4 control-label">Asset Type</label>
+          <div class="col-sm-7">
+            <select class="form-control">
+              <option value="access-point">Access Point</option>
+              <option value="camera">Camera</option>
+              <option value="desktop">Desktop</option>
+              <option value="digital-camera">Digital Camera</option>
+              <option value="external-hd">External Hard Disk</option>
+              <option value="laptop">Laptop</option>
+              <option value="monitor">Monitor</option>
+              <option value="mouse">Mouse</option>
+              <option value="printer">Printer</option>
+              <option value="projector">Projector</option>
+              <option value="server">Server</option>
+              <option value="switch">Switch</option>
+              <option value="tv">TV</option>
+              <option value="ups">UPS</option>
+              <option value="video-conference">Video Conference</option>
+            </select>
+          </div>
+        </div>
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">Adjust Technology Refresher</h2>
+      <div class="row col-md-12 form-group">
+        Current Technology Refresher: 3 years
       </div>
-    </div>
-    <input type="button" name="next" class="next action-button" value="Next" />
-  </fieldset>
-  <fieldset>
-    <h2 class="fs-title">Adjust Technology Refresher</h2>
-    <div class="row col-md-12 form-group">
-      Current Technology Refresher: 3 years
-    </div>
-    <div class="form-group">
-      <label for="type" class="col-sm-4 control-label">New Technology Refresher</label>
-      <div class="col-sm-7">
-        <select class="form-control">
-          <option value="one-year">1 year</option>
-          <option value="two-years">2 years</option>
-          <option value="three-years">3 years</option>
-        </select>
+      <div class="form-group">
+        <label for="type" class="col-sm-4 control-label">New Technology Refresher</label>
+        <div class="col-sm-7">
+          <select class="form-control">
+            <option value="one-year">1 year</option>
+            <option value="two-years">2 years</option>
+            <option value="three-years">3 years</option>
+          </select>
+        </div>
       </div>
-    </div>
-    <input type="button" name="previous" class="previous action-button" value="Previous" />
-    <input type="button" name="next" class="next action-button" value="Next" />
-  </fieldset>
-  <fieldset>
-    <h2 class="fs-title">Verify Asset Details</h2>
-    Current Technology Refresher: 3 years<br>
-    New Technology Refresher: 2 years<br>
-    <input type="button" name="previous" class="previous action-button" value="Previous" />
-    <input type="button" name="next" class="next action-button" value="Submit" />
-  </fieldset>
-  <fieldset>
-    <h3 class="fs-subtitle">Technology refresher of (laptop) successfully updated!</h3>
-    <input type="submit" name="submit" class="submit action-button" value="OK" />
-  </fieldset>
-</form>
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">Verify Asset Details</h2>
+      Current Technology Refresher: 3 years<br>
+      New Technology Refresher: 2 years<br>
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="button" name="next" class="next action-button" value="Submit" />
+    </fieldset>
+    <fieldset>
+      <h3 class="fs-subtitle">Technology refresher of (laptop) successfully updated!</h3>
+      <input type="submit" name="submit" class="submit action-button" value="OK" />
+    </fieldset>
+  </form>
 </div>
 
 
