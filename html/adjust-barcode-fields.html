@@ -44,8 +44,8 @@
 <!--******* NAVIGATION BAR *******-->
 <!--******************************-->
 
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid ">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header col-sm-7">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -54,39 +54,42 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">PBI IT Asset Inventory System</a>
+      <a class="navbar-brand" style="color:white;" href="../html/dashboard.html">PBI IT Asset Inventory System</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse col-sm-7" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Assets<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Manage</a></li>
-            <li><a href="#">Add</a></li>
-            <li><a href="#">View All</a></li>
+          <a href="#" class="dropdown-toggle active" style="color:white;" data-toggle="dropdown">Assets<span class="caret"></span></a>
+          <ul class="dropdown-menu" style="color:white;" role="menu">
+            <li><a href="../html/manage-assets.html">Manage</a></li>
+            <li><a href="../html/add-asset.html">Add</a></li>
+            <li><a href="#viewassets" data-toggle="modal">View All</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Personnel<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Manage</a></li>
-            <li><a href="#">Add</a></li>
+          <a href="#" class="dropdown-toggle" style="color:white;" data-toggle="dropdown">Personnel<span class="caret"></span></a>
+          <ul class="dropdown-menu" style="color:white;" role="menu">
+            <li><a href="../html/manage-personnel.html">Manage</a></li>
+            <li><a href="../html/add-personnel.html">Add</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Create Account</a></li>
-            <li><a href="#">Manage Account</a></li>
-            <li><a href="#">Change Password</a></li>
+          <a href="#" class="dropdown-toggle" style="color:white;" data-toggle="dropdown">Settings<span class="caret"></span></a>
+          <ul class="dropdown-menu" style="color:white;" role="menu">
+            <li><a href="../html/create-account.html">Create Account</a></li>
+            <li><a href="../html/edit-account-details.html">Manage Account</a></li>
+            <li><a href="../html/change-password.html">Change Password</a></li>
             <li class="divider"></li>
-			<li><a href="#">Adjust Barcode Fields</a></li>
-            <li><a href="#">Adjust Technology Refresher</a></li>
+            <li><a href="#">Adjust Barcode Fields</a></li>
+            <li><a href="../html/adjust-technology-refresher.html">Adjust Technology Refresher</a></li>
             <li class="divider"></li>
             <li><a href="#">Database Backup</a></li>
           </ul>
+        </li>
+        <li>
+          <a id="scanbutton" class="btn btn-danger navbar-btn" href="#scanbarcode" role="button" data-toggle="modal" style="color:white; padding:5px; margin-left:25px;">Scan Barcode</a>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -97,7 +100,7 @@
 <!--******* ADJUST *******-->
 <!--**********************-->
 
-<div class="container" style="background-color: #F17C71; margin-top:60px; min-height:300px;">
+<div class="container" style="background-color: #cccccb; margin-top:60px; min-height:300px;">
 	<!-- multistep form -->
 <form id="msform" class="form-horizontal" role="form" action="#" method="POST" enctype="multipart/form-data" onsubmit="#" style="width: 700px;">
   <!-- progressbar -->
@@ -113,8 +116,8 @@
     <div class="form-group">
     <label class="col-sm-4 control-label">Category</label>
     <div class="col-sm-8">
-        <label class="radio-inline"> <input type="radio" name="category" id="hardwareCategory" value="hardware" checked> Hardware </label>
-        <label class="radio-inline"> <input type="radio" name="category" id="softwareCategory" value="software"> Software </label>
+        <label class="radio-inline"> <input type="radio" name="category" id="hardwareCategory" value="hardware" checked style="width:5px;"> Hardware </label>
+        <label class="radio-inline"> <input type="radio" name="category" id="softwareCategory" value="software" style="width:5px;"> Software </label>
     </div>
     </div>
     <input type="button" name="next" class="next action-button" value="Next" />
@@ -125,44 +128,44 @@
     <div class="row" style="padding-top: 35px; padding-bottom:20px;">
       <div class="col-sm-4">
         <div class="checkbox">
-          <label><input type="checkbox" value="">Barcode Number</label>
+          <label><input type="checkbox" value="" style="width:5px;">Barcode Number</label>
         </div>
         <div class="checkbox">
-          <label><input type="checkbox" value="">Asset Number</label>
+          <label><input type="checkbox" value="" style="width:5px;">Asset Number</label>
         </div>
         <div class="checkbox">
-          <label><input type="checkbox" value="">Asset Type</label>
+          <label><input type="checkbox" value="" style="width:5px;">Asset Type</label>
         </div>
         <div class="checkbox">
-          <label><input type="checkbox" value="">Model</label>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="checkbox">
-          <label><input type="checkbox" value="">ERF Number</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" value="">Serial Number</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" value="">Hostname</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" value="">Vendor</label>
+          <label><input type="checkbox" value="" style="width:5px;">Model</label>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="checkbox">
-          <label><input type="checkbox" value="">PO Number</label>
+          <label><input type="checkbox" value="" style="width:5px;">ERF Number</label>
         </div>
         <div class="checkbox">
-          <label><input type="checkbox" value="">Date of Purchase</label>
+          <label><input type="checkbox" value="" style="width:5px;">Serial Number</label>
         </div>
         <div class="checkbox">
-          <label><input type="checkbox" value="">Technology Refresher</label>
+          <label><input type="checkbox" value="" style="width:5px;">Hostname</label>
         </div>
         <div class="checkbox">
-          <label><input type="checkbox" value="">Cost</label>
+          <label><input type="checkbox" value="" style="width:5px;">Vendor</label>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="checkbox">
+          <label><input type="checkbox" value="" style="width:5px;">PO Number</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="" style="width:5px;">Date of Purchase</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="" style="width:5px;">Technology Refresher</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="" style="width:5px;">Cost</label>
         </div>
       </div>
     </div>
@@ -213,44 +216,44 @@
     <div class="row" style="padding-top: 35px; padding-bottom:20px;">
       <div class="col-sm-4">
         <div class="checkbox">
-          <label><input type="checkbox" value="">Barcode Number</label>
+          <label><input type="checkbox" value="" style="width:5px;">Barcode Number</label>
         </div>
         <div class="checkbox">
-          <label><input type="checkbox" value="">Asset Number</label>
+          <label><input type="checkbox" value="" style="width:5px;">Asset Number</label>
         </div>
         <div class="checkbox">
-          <label><input type="checkbox" value="">Asset Type</label>
+          <label><input type="checkbox" value="" style="width:5px;">Asset Type</label>
         </div>
         <div class="checkbox">
-          <label><input type="checkbox" value="">Model</label>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="checkbox">
-          <label><input type="checkbox" value="">ERF Number</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" value="">Serial Number</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" value="">Hostname</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" value="">Vendor</label>
+          <label><input type="checkbox" value="" style="width:5px;">Model</label>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="checkbox">
-          <label><input type="checkbox" value="">PO Number</label>
+          <label><input type="checkbox" value="" style="width:5px;">ERF Number</label>
         </div>
         <div class="checkbox">
-          <label><input type="checkbox" value="">Date of Purchase</label>
+          <label><input type="checkbox" value="" style="width:5px;">Serial Number</label>
         </div>
         <div class="checkbox">
-          <label><input type="checkbox" value="">Technology Refresher</label>
+          <label><input type="checkbox" value="" style="width:5px;">Hostname</label>
         </div>
         <div class="checkbox">
-          <label><input type="checkbox" value="">Cost</label>
+          <label><input type="checkbox" value="" style="width:5px;">Vendor</label>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="checkbox">
+          <label><input type="checkbox" value="" style="width:5px;">PO Number</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="" style="width:5px;">Date of Purchase</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="" style="width:5px;">Technology Refresher</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="" style="width:5px;">Cost</label>
         </div>
       </div>
     </div>
@@ -317,7 +320,7 @@
 <!--***********************-->
 
 <!-- jQuery Core -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 <!-- jQuery Core -->
 <script src="../js/jquery.js"></script>
 <!-- Bootstrap -->
