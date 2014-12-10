@@ -212,6 +212,10 @@ body {
   color: white;
 }
 
+.container-fluid{
+  margin-top: 2em;
+}
+
 .container-half{
   margin-left: 3em;
   margin-right: 3em;
@@ -220,6 +224,12 @@ body {
 .container-one-side{
   margin-left: 0em;
   margin-right: 0em;
+}
+
+.form-controller-small{
+  height: 30px;
+  padding: 3px  6px;
+  font-size: 9px
 }
 
 .panel-personnel-content{
@@ -391,3 +401,4 @@ select {
 #adjust-tech-container {
   height: 100%;
 }
+
