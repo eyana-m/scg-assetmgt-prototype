@@ -212,9 +212,7 @@ body {
   color: white;
 }
 
-.container-fluid{
-  margin-top: 2em;
-}
+
 
 .container-half{
   margin-left: 3em;
@@ -400,5 +398,10 @@ select {
 
 #adjust-tech-container {
   height: 100%;
+}
+
+.dashboard-panel {
+  border:5px;
+  background-color: white;
 }
 
