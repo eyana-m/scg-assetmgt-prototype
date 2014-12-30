@@ -402,6 +402,13 @@ select {
 
 .dashboard-panel {
   border:5px;
-  background-color: white;
+}
+
+.dashboard-row {
+  background-color: #bdc3c7;
+}
+
+.padding-fifteen {
+  padding:15px;
 }
 
