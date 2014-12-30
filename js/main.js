@@ -1,51 +1,57 @@
 $(function () {
     $('#barchart-1').highcharts({
         chart: {
-            type: 'bar'
+            type: 'column'
         },
         title: {
-            text: 'Fruit Consumption'
+            text: 'Current Inventory Count'
         },
         xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges']
+            categories: ['Camera', 'Desktop', 'Laptop', 'Printer']
         },
         yAxis: {
             title: {
-                text: 'Fruit eaten'
+                text: 'Quantity'
             }
         },
         series: [{
-            name: 'Jane',
-            data: [1, 0, 4]
+            name: 'Active',
+            data: [3, 5, 4, 1]
         }, {
-            name: 'John',
-            data: [5, 7, 3]
-        }],
+            name: 'Inactive',
+            data: [2, 7, 5, 3]
+        }]
     });
 });
 
 $(function () {
     $('#barchart-2').highcharts({
         chart: {
-            type: 'bar'
+            type: 'column'
         },
         title: {
-            text: 'Fruit Consumption'
+            text: 'Inventory Status'
         },
         xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges']
+            categories: ['Desktop', 'Laptop', 'Monitor', 'Projector']
         },
         yAxis: {
             title: {
-                text: 'Fruit eaten'
+                text: 'Quantity'
             }
         },
         series: [{
-            name: 'Jane',
-            data: [1, 0, 4]
+            name: 'Active',
+            data: [8, 17, 7, 0]
         }, {
-            name: 'John',
-            data: [5, 7, 3]
+            name: 'Service Unit',
+            data: [3, 11, 0, 0]
+        }, {
+            name: 'For Repair',
+            data: [0, 0, 0, 3]
+        }, {
+            name: 'Unknown',
+            data: [0, 0, 0, 0]
         }],
     });
 });
