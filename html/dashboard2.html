@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="width=device-width, initial-scale=1.0"/>
+  <!-- Mobile Specifics -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="HandheldFrendly" content="true"/>
+  <meta name="MobileOptimized" content=320/>
+
+  <title>PBI IT Asset Inventory System - Add Asset</title>
+
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link href="../css/styles.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" href="#">
+  <link rel="apple-touch-icon" sizes="114x114" href="#">
+  <link rel="apple-touch-icon" sizes="72x72" href="#">
+  <link rel="apple-touch-icon" sizes="144x144" href="#">
+  </head>
+  
+</html>
+
+<body>
+    <div class="container" style="background-color: #cccccb; margin-top: 1em;">
+      <ul class="nav nav-tabs" style="padding-top: 20px;">
+        <li class="nav active"><a href="#hardware" data-toggle="tab">Hardware</a></li>
+        <li class="nav"><a href="#software" data-toggle="tab">Software</a></li>
+      </ul>
+    <!-- Tab Panes -->
+    <div class="tab-content">
+      <div class="tab-pane fade in active" id="hardware">
+        <div class="container">
+      <h4 class="exo-font"><b><center>Inventory Status</center></b></h4>
+      <div class="col-md-6 dashboard-panel">
+        <div style="margin-bottom:15px;">
+            
+            Status: 
+            <div class="btn-group" role="group" aria-label="..." >
+              <button type="button" class="btn btn-primary">Active</button>
+              <button type="button" class="btn btn-danger" style="margin-right:10px;">Inactive</button>
+            </div>
+            Company: 
+            <div class="btn-group" role="group" aria-label="..." >
+              <button type="button" class="btn btn-default">ROCES</button>
+              <button type="button" class="btn btn-default">STAM</button>
+              <button type="button" class="btn btn-default">ALL</button>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-6 padding-fifteen">
+        <div id="barchart-2" style="width:100%; height:100%"></div>
+      </div>
+    </div>
+      </div>
+      <div class="tab-pane fade in" id="software">
+        HELLO
+      </div>
+    </div>
+
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
