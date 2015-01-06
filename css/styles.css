@@ -365,6 +365,10 @@ select {
   border-radius: 0px;
 }
 
+.no-border {
+  border:0px;
+}
+
 #tag-personnel-id {
   color: white;
   font-size: 20px;
@@ -412,3 +416,6 @@ select {
   padding:15px;
 }
 
+.nav-two {
+  color:white;
+}
