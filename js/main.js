@@ -7,7 +7,7 @@ $(function () {
             text: 'Philippine Batteries, Inc.'
         },
         xAxis: {
-            categories: ['Camera', 'Desktop', 'Laptop', 'Printer']
+            categories: ['Access Point', 'Camera', 'Desktop', 'Digital Camera', 'External Hard Disk', 'Laptop', 'Monitor', 'Mouse', 'Printer', 'Projector', 'Server', 'Switch', 'TV', 'UPS', 'Video Conference']
         },
         yAxis: {
             title: {
@@ -16,10 +16,10 @@ $(function () {
         },
         series: [{
             name: 'Active',
-            data: [3, 5, 4, 1]
+            data: [3, 5, 4, 1, 3, 3, 6, 2, 7, 8, 2, 5, 2, 6, 2]
         }, {
             name: 'Inactive',
-            data: [2, 7, 5, 3]
+            data: [2, 7, 5, 3, 5, 6, 6, 2, 8, 2, 5, 1, 5, 3, 5]
         }]
     });
 });

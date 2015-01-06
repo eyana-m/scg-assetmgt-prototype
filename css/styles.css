@@ -416,8 +416,16 @@ select {
   padding:15px;
 }
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+.nav-tabs>li.active>#PBI-tab, #PBI-tab:hover {
   background-color: #2980b9;
+}
+
+.nav-tabs>li.active>#STAM-tab, #STAM-tab:hover  {
+  background-color: #e74c3c;
+}
+
+.nav-tabs>li.active>#ALL-tab, #ALL-tab:hover  {
+  background-color: #8e44ad;
 }
 
 

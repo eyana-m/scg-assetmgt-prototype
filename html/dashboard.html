@@ -98,9 +98,9 @@
     <h4 class="exo-font"><center><b>Current Inventory Count</b></center></h4>
     <div class="container" style="background-color: #cccccb; margin-top: 1em; padding-bottom:15px;">
       <ul class="nav nav-tabs" style="padding-top: 20px;">
-        <li class="nav active"><a class="tab-headers" href="#PBI-1" data-toggle="tab" style="border-radius:0px;">PBI</a></li>
-        <li class="nav nav-two"><a class="tab-headers" id="hello" href="#STAM-1" data-toggle="tab" style="border-radius:0px;">STAM</a></li>
-        <li class="nav"><a class="tab-headers" href="#ALL-1" data-toggle="tab" style="border-radius:0px;">ALL</a></li>
+        <li class="nav active"><a class="tab-headers" id="PBI-tab"href="#PBI-1" data-toggle="tab" style="border-radius:0px;">PBI</a></li>
+        <li class="nav nav-two"><a class="tab-headers" id="STAM-tab" href="#STAM-1" data-toggle="tab" style="border-radius:0px;">STAM</a></li>
+        <li class="nav"><a class="tab-headers" id="ALL-tab" href="#ALL-1" data-toggle="tab" style="border-radius:0px;">ALL</a></li>
       </ul>
       <div class="tab-content" style="background-color:#cccccb;">
         <div class="tab-pane fade in active" id="PBI-1" style="border:0px;">
@@ -109,12 +109,12 @@
             </div>
         </div>
         <div class="tab-pane fade in" id="STAM-1">
-            <div class="padding-fifteen" style="background-color:#e74c3c;">
+            <div class="padding-fifteen no-side-padding" style="background-color:#e74c3c;">
               <div class ="col-md-12" id="barchart-STAM-1" style="width:100%; height:100%;"></div>
             </div>
         </div>
         <div class="tab-pane fade in" id="ALL-1">
-            <div class="padding-fifteen">
+            <div class="padding-fifteen no-side-padding" style="background-color:#8e44ad;">
               <div id="barchart-ALL-1" style="width:100%; height:100%;"></div>
             </div>
         </div>
@@ -399,6 +399,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 <script src="../js/jquery-1.11.1.min.js"></script>
 <script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="../js/highcharts.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/main.js"></script>
 
