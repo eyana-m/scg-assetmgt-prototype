@@ -22,7 +22,8 @@ $(function () {
             data: [2, 7, 5, 3, 5, 6, 6, 2, 8, 2, 5, 1, 5, 3, 5]
         }]
     });
-}
+    $(window).resize();
+});
 
 $(function () {
     $('#barchart-STAM-1').highcharts({
@@ -48,6 +49,7 @@ $(function () {
             data: [2, 7, 5, 3, 5, 6, 6, 2, 8, 2, 5, 1, 5, 3, 5]
         }]
     });
+    $(window).resize();
 });
 
 $(function () {
@@ -74,6 +76,7 @@ $(function () {
             data: [2, 7, 5, 3, 5, 6, 6, 2, 8, 2, 5, 1, 5, 3, 5]
         }]
     });
+    $(window).resize();
 });
 
 $(function () {
