@@ -446,3 +446,7 @@ select {
   width: inherit;
   height: inherit;
 }
+
+.dashboard-table-row {
+  height:25px !important;
+}
