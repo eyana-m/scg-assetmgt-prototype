@@ -448,5 +448,9 @@ select {
 }
 
 .dashboard-table-row {
-  height:25px !important;
+  height:37px;
+}
+
+tbody {
+  font-size: 11px;
 }
